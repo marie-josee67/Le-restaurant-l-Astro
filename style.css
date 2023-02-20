@@ -24,3 +24,17 @@
 .footer{
     background: gray;
 }
+
+.nav{
+    width: 100%;
+    text-align: center;
+    border: 2px solid blue;
+}
+
+/*.nav a {
+    display: flex;
+    width: 100%;
+    text-align: center;
+    text-decoration: none;
+    border: 2px solid red;
+}
