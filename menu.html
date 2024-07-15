@@ -78,102 +78,9 @@
 
         <tbody>-->
 
-            <!-- ************************************** Soda ************************************-->
-            <!--<tr>
-                <td colspan="2" id="soda">La rivière du <em>Poisson</em> :</td>
-                <td></td>
-            </tr>
-
-            <tr>
-                <td>Coca cola:</td>
-                <td></td>
-                <td>4.99€</td>
-            </tr>
-
-            <tr>
-                <td>Pepsi :</td>
-                <td></td>
-                <td>3.99€</td>
-            </tr>
-
-            <tr>
-                <td>Fanta :</td>
-                <td></td>
-                <td>3.99€</td>
-            </tr>
-
-            <tr>
-                <td >Oasis tropical :</td>
-                <td></td>
-                <td>3.99€</td>
-            </tr>
-
-            <tr>
-                <td>Oasis fruit rouge :</td>
-                <td></td>
-                <td>3.99€</td>
-            </tr>
-
-            <tr>
-                <td>Ice tea pêche :</td>
-                <td></td>
-                <td>3.99€</td>
-            </tr>
-
-            <tr>
-                <td>Ice tea light :</td>
-                <td></td>
-                <td>3.99€</td>
-            </tr>
-
-            <tr>
-                <td>Ice tea fruit rouge :</td>
-                <td></td>
-                <td>3.99€</td>
-            </tr>-->
-
 <!-- ********************************************** Cocktail sans alcool ************************************************* -->
 
-            <!--<tr>
-                <td colspan="2" id="cocktailSansAlcool">Le <em>Poisson</em> fait la fête en toute légalité ( sans alcool ):</td>
-                <td></td>
-            </tr>
-
-            <tr>
-                <td>Margarita: <br> <i> (Orange, cirton vert, sirop d'agave, sucre)</i></td>
-                <td><img src="img/margarita_sans_alcool.jpg" width="400"  height="200" alt="cocktail margarita sans alcool "></td>
-                <td>9.99€</td>
-            </tr>
-
-            <tr>
-                <td>Mojito menthe : <br> <i>(limonade, citron vert, feuille de menthe, glace piler, sucre)</i></td>
-                <td><img src="img/mojito_menthe_sans_alcool.jpg" width="400" height="200" alt=" cocktail mojito menthe sans alcool"></td>
-                <td>9.99€</td>
-            </tr>
-
-            <tr>
-                <td>Mojito Fraise : <br> <i>(limonade,jus d'orange,jus de fraise, glasse piler,fraise)</i></td>
-                <td><img src="img/mojito_fraise_sans_alcool.jpg" width="400" height="200"alt="cocktail mojito fraise sans alcool"></td>
-                <td>9.99€</td>
-            </tr>
-
-            <tr>
-                <td>Pina Colada:<br> <i>(ananas, coco, glaçon, orange, vanille, menthe)</i></td>
-                <td><img src="img/Pina_colada_sans_alcool.jfif"width="400" height="200" alt="cocktail Pina colada sans alcool"></td>
-                <td>9.99€</td>
-            </tr>
-
-            <tr>
-                <td>Sangria :<br> <i>(sucre, raisin noir, eau gazeuse, citron, orange, cannelle)</i></td>
-                <td><img src="img/sangria_sans_alcool.jpg" width="400" height="200" alt="cocktail Sangria sans alcool"></td>
-                <td>9.99€</td>
-            </tr>
-
-            <tr>
-                <td>Punch :<br> <i>(orange, fruit exotique, citron, sucre de canne)</i></td>
-                <td> <img src="img/punch_sans_alcool.jfif" width="400" height="200" alt="cocktail Punch sans alcool"></td>
-                <td>9.99€</td>
-            </tr>-->
+            
 <!-- ************************************************* Cocktail Alccolisé *********************************************** -->
             <!--<tr>
                 <td colspan="2" id="cocktailAvecAlcool">Le <em>Poisson</em> est tous émoustiller:</td>
@@ -793,13 +700,13 @@
                 </div>
 
                 <div class="grid_1">
-                    <div class="card" data-category="design" >
+                    <div class="card" data-category="Boissons" >
 
                         <!-- image fictif aléatoire -->
-                        <img  class="card__image" src="./img/carte de visite recto.png" alt="image du projet">
+                        <img  class="card__image" src="img/margarita_sans_alcool.jpg"  alt="image d'un cocktail">
                         <div class="card__inner">
-                            <h2 class="card__title" >Carte de visite</h2>
-                            <p class="category">Web Design</p>
+                            <h2 class="card__title" >Cocktails sans alcool</h2>
+                            <p class="category">Boissons</p>
                         </div>
 
                         <!-- élément par dessus la card ==> modale -->
@@ -814,42 +721,49 @@
                         <div class="modal__content">
                             <div class="container">
                                 <div class="grid">
-                                    <div class="grid__item">
-                                        <img src="./img/carte de visite recto.png" class="card__image" alt=" photos projet XY">
-                                        <img src="./img/carte de visite verso.png" class="card__image" alt=" photos projet XY">
-                                    </div>
-                                    <div class="grid__item ">
-                                        <!-- le h4 prend le style du h2 ici -->
-                                        <h4 class="mondal__title h2" >Carte de visite</h4>
+                                    <table>
+                                        <tr>
+                                            <td colspan="2" id="cocktailSansAlcool">Le <em>Poisson</em> fait la fête en toute légalité ( sans alcool ):</td>
+                                            <td>Prix</td>
+                                        </tr>
 
-                                        <p>
-                                            <svg xmlns="http://www.w3.org/2000/svg" height="15" width="15" viewBox="0 0 448 512"><!--Font Awesome Free 6.5.1 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free Copyright 2023 Fonticons, Inc.--><path opacity="1" fill="#1E3050" d="M152 24c0-13.3-10.7-24-24-24s-24 10.7-24 24V64H64C28.7 64 0 92.7 0 128v16 48V448c0 35.3 28.7 64 64 64H384c35.3 0 64-28.7 64-64V192 144 128c0-35.3-28.7-64-64-64H344V24c0-13.3-10.7-24-24-24s-24 10.7-24 24V64H152V24zM48 192H400V448c0 8.8-7.2 16-16 16H64c-8.8 0-16-7.2-16-16V192z"/></svg>
-                                            <i>Année : 2023</i>
-                                        </p>
+                                        <tr>
+                                            <td>Margarita: <br> <i> (Orange, cirton vert, sirop d'agave, sucre)</i></td>
+                                            <td><img src="img/margarita_sans_alcool.jpg" width="400"  height="200" alt="cocktail margarita sans alcool "></td>
+                                            <td>9.99€</td>
+                                        </tr>
 
-                                        <p class="category" >
-                                            <svg xmlns="http://www.w3.org/2000/svg" height="15" width="15" viewBox="0 0 448 512"><!--Font Awesome Free 6.5.1 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free Copyright 2023 Fonticons, Inc.--><path d="M0 80V229.5c0 17 6.7 33.3 18.7 45.3l176 176c25 25 65.5 25 90.5 0L418.7 317.3c25-25 25-65.5 0-90.5l-176-176c-12-12-28.3-18.7-45.3-18.7H48C21.5 32 0 53.5 0 80zm112 32a32 32 0 1 1 0 64 32 32 0 1 1 0-64z"/></svg>
-                                            Web Design
-                                        </p>
+                                        <tr>
+                                            <td>Mojito menthe : <br> <i>(limonade, citron vert, feuille de menthe, glace piler, sucre)</i></td>
+                                            <td><img src="img/mojito_menthe_sans_alcool.jpg" width="400" height="200" alt=" cocktail mojito menthe sans alcool"></td>
+                                            <td>9.99€</td>
+                                        </tr>
 
-                                        <p>
-                                            J'ai voulu ici créer ma carte de visite personnel. Avec des éléments que j'ai choisi et montée exactement comme je le voulais. J'ai aussi modifier la couleur d'orignie du logo, mais pas celle du fond d'écran!
-                                        </p>
+                                        <tr>
+                                            <td>Mojito Fraise : <br> <i>(limonade,jus d'orange,jus de fraise, glasse piler,fraise)</i></td>
+                                            <td><img src="img/mojito_fraise_sans_alcool.jpg" width="400" height="200"alt="cocktail mojito fraise sans alcool"></td>
+                                            <td>9.99€</td>
+                                        </tr>
 
-                                        <h5 class="h3">Informations</h5>
+                                        <tr>
+                                            <td>Pina Colada:<br> <i>(ananas, coco, glaçon, orange, vanille, menthe)</i></td>
+                                            <td><img src="img/Pina_colada_sans_alcool.jfif"width="400" height="200" alt="cocktail Pina colada sans alcool"></td>
+                                            <td>9.99€</td>
+                                        </tr>
 
-                                        <p>
-                                            J'ai imprimer personnellement ces cartes sur mon imprimante avec un papier spéciale appeler papier miroitant.
-                                        </p>
+                                        <tr>
+                                            <td>Sangria :<br> <i>(sucre, raisin noir, eau gazeuse, citron, orange, cannelle)</i></td>
+                                            <td><img src="img/sangria_sans_alcool.jpg" width="400" height="200" alt="cocktail Sangria sans alcool"></td>
+                                            <td>9.99€</td>
+                                        </tr>
 
-                                        <h5 class="h3">Technologies</h5>
-
-                                        <ul>
-                                            <li>photopea</li>
-                                        </ul>
-
-                                    </div>
-                                </div>
+                                        <tr>
+                                            <td>Punch :<br> <i>(orange, fruit exotique, citron, sucre de canne)</i></td>
+                                            <td> <img src="img/punch_sans_alcool.jfif" width="400" height="200" alt="cocktail Punch sans alcool"></td>
+                                            <td>9.99€</td>
+                                        </tr>
+                                    </table>
+        
                             </div>
                         </div>
                     </div>
