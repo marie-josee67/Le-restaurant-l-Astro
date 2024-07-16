@@ -1,0 +1,5 @@
+Projet: créer un site fixtif pour un restaurant fixtif.
+
+Sites utiliser:
+
+https://www.pexels.com/fr-fr/ ==> une partie des images
