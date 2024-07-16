@@ -53,6 +53,10 @@
                     <li class="grid__item">
                         <a href="#" data-filter="Boissons" >Boissons</a>
                     </li>
+
+                    <li class="grid__item">
+                        <a href="#" data-filter="Fetes" >Fêtes</a>
+                    </li>
                 </ul>
             
     <!-- ************************************** gril du menu ***********************************-->
@@ -888,7 +892,7 @@
 
     <!-- ***************************************** Alcool Pur *****************************-->
                     <div class="grid_1">
-                        <div class="card" data-category="app" >
+                        <div class="card" data-category="Boissons" >
 
                             
                             <img  class="card__image" src="./img/alcool-pur.jpg" alt="image d'un verre contenant de l'alcool pur">
@@ -962,65 +966,69 @@
                         </div>
                     </div>
 
+<!-- ************************************ Anniversaire Gâteau************************ -->
                     <div class="grid_1">
-                        <div class="card" data-category="app" >
+                        <div class="card" data-category="Fetes" >
 
                             
-                            <img  class="card__image" src="./img/Générateur_de_mot_de_passe_image.JPG" alt="image du projet">
+                            <img  class="card__image" src="./img/gateau.jpg" alt="image d'un gâteau">
                             <div class="card__inner">
-                                <h2 class="card__title" >Générateur de mot de passe</h2>
-                                <p class="category">APPLICATION</p>
+                                <h2 class="card__title" >Anniversaire Gâteau</h2>
+                                <p class="category">Fêtes</p>
                             </div>
 
                         
                             <div class="card__overlay">
-                                <a href="#" class="card__link" data-id="modal-6"> + </a>
+                                <a href="#" class="card__link" data-id="modal-14"> + </a>
                             </div>
                         </div>
                         
-                        <div class="modal" id="modal-6">
+                        <div class="modal" id="modal-14">
                             <button class="modal__close">&times;</button>
                         >
                             <div class="modal__content">
                                 <div class="container">
                                     <div class="grid">
-                                        <div class="grid__item">
-                                            <img src="./img/generateur_1.JPG" class="card__image" alt=" photos projet XY">
-                                            <img src="./img/generateur_2.JPG" class="card__image" alt=" photos projet XY">
-                                        </div>
-                                        <div class="grid__item ">
-                                        
-                                            <h4 class="mondal__title h2" >Générateur de mot de passe</h4>
+                                        <table>
+                                            <tr>
+                                                <td colspan="4" id="annivGateau">Un évènement<em>Céleste</em>:</td>
+                                            </tr>
 
-                                            <p>
-                                                <svg xmlns="http://www.w3.org/2000/svg" height="15" width="15" viewBox="0 0 448 512"><path opacity="1" fill="#1E3050" d="M152 24c0-13.3-10.7-24-24-24s-24 10.7-24 24V64H64C28.7 64 0 92.7 0 128v16 48V448c0 35.3 28.7 64 64 64H384c35.3 0 64-28.7 64-64V192 144 128c0-35.3-28.7-64-64-64H344V24c0-13.3-10.7-24-24-24s-24 10.7-24 24V64H152V24zM48 192H400V448c0 8.8-7.2 16-16 16H64c-8.8 0-16-7.2-16-16V192z"/></svg>
-                                                <i>Année : 2023</i>
-                                            </p>
+                                            <tr>
+                                                <td>Nom</td>
+                                                <td>Parfum</td>
+                                                <td>Image</td>
+                                                <td>Prix</td>
+                                            </tr>
 
-                                            <p class="category" >
-                                                <svg xmlns="http://www.w3.org/2000/svg" height="15" width="15" viewBox="0 0 448 512"><path d="M0 80V229.5c0 17 6.7 33.3 18.7 45.3l176 176c25 25 65.5 25 90.5 0L418.7 317.3c25-25 25-65.5 0-90.5l-176-176c-12-12-28.3-18.7-45.3-18.7H48C21.5 32 0 53.5 0 80zm112 32a32 32 0 1 1 0 64 32 32 0 1 1 0-64z"/></svg>
-                                                Application
-                                            </p>
+                                            <tr>
+                                                <td>Poussacha:</td>
+                                                <td>Vanille, chocolat et pistache pour 6 personnes minimum </td>
+                                                <td> <img src="./img/poussacha.jpg" alt="image du pokémon poussacha"> </td>
+                                                <td>28.99€</td>
+                                            </tr>
 
-                                            <p>
-                                                Là j'ai tous simplement suivit un tuto sur YouTube. Car j'avais du mal à trouver des mots de passe pour mes différetens comptes.
-                                            </p>
+                                            <tr>
+                                                <td>Licorne:</td>
+                                                <td>Vanille, fraise, possibilité de rajouter des bombom surprise dedans pour 6 personnes minimum </td>
+                                                <td> <img src="./img/licorne.jpg" alt="gateau licorne en pièce monter avec une deco de flaur autour"> </td>
+                                                <td>28.99€</td>
+                                            </tr>
 
-                                            <h5 class="h3">Informations</h5>
+                                            <tr>
+                                                <td>Patpatrouille:</td>
+                                                <td>Mousse trois chocolat, pour 6 personnes minimum  </td>
+                                                <td> <img src="./img/pat-patrouille-BD.jpg" alt="gâteau d'un chiot de pat-patrouille"> </td>
+                                                <td>26.99€</td>
+                                            </tr>
 
-                                            <p>
-                                                J'ai ensuite adapter à mes besoins et rajouter un bouton pour les majuscules. Pour pouvoir choisir si je les veux ou pas dans le mot de passe.
-                                            </p>
-
-                                            <h5 class="h3">Technologies</h5>
-
-                                            <ul>
-                                                <li>HTML</li>
-                                                <li>CSS</li>
-                                                <li>Javascript</li>
-                                            </ul>
-
-                                        </div>
+                                            <tr>
+                                                <td>L'arc-en-ciel du destin:</td>
+                                                <td>Trois à quatre parfums aux choix, plusieur colories possible selon disponibilité du moment, pour 10 personnes minimum </td>
+                                                <td> <img src="./img/gateau_arc_en_ciel.jpg" alt="gâteau arc-en-ciel"> </td>
+                                                <td>49.99€</td>
+                                            </tr>
+                                        </table>
                                     </div>
                                 </div>
                             </div>
