@@ -30,1142 +30,1139 @@
         </ul>
     </nav>
 
+    <main>
+        <!-- *************************************************** Menu *******************************************************-->
+        <section id="menu" class="menu">
+            <div class="container">
+                <div class="section-header">
+                    <h1 class="section-title">Menu</h1>
+                    <p>Voici la carte du restaurant l'Astro! </p>
+                </div>
 
+                <!-- *************************** gril des filtres de projets ******************-->
+                <ul class="grid menu-filters list-unstyled">
+                    <li class="grid__item">
+                        <!-- data-filter ==> pour le js -->
+                        <a href="#" class="active" data-filter="all">Menu</a>
+                    </li>
 
+                    <li class="grid__item">
+                        <a href="#" data-filter="Plats" > Plats</a>
+                    </li>
 
-<main>
-    <!-- *************************************************** Menu *******************************************************-->
-    <section id="menu" class="menu">
-        <div class="container">
-            <div class="section-header">
-                <h1 class="section-title">Menu</h1>
-                <p>Voici la carte du restaurant l'Astro! </p>
-            </div>
+                    <li class="grid__item">
+                        <a href="#" data-filter="Boissons" >Boissons</a>
+                    </li>
+                </ul>
+            
+    <!-- ************************************** gril du menu ***********************************-->
 
-            <!-- *************************** gril des filtres de projets ******************-->
-            <ul class="grid menu-filters list-unstyled">
-                <li class="grid__item">
-                    <!-- data-filter ==> pour le js -->
-                    <a href="#" class="active" data-filter="all">Menu</a>
-                </li>
+    <!-- **************************** Entrées **************************** -->
+                <div class="grid">
+                    <div class="grid_1">
+                        <!-- data-category ==> js des class pour le filtre-->
+                        <div class="card" data-category="Plats" >
 
-                <li class="grid__item">
-                    <a href="#" data-filter="Plats" > Plats</a>
-                </li>
+                            <!-- image fictif aléatoire -->
+                            <img  class="card__image" src="img/La_rencontre_de_Neptune_et_de_Venus.jfif"  alt="image d'une entrée">
+                            <div class="card__inner">
+                                <h2 class="card__title" >Les entrées</h2>
+                                <p class="category">Plats</p>
+                            </div>
 
-                <li class="grid__item">
-                    <a href="#" data-filter="Boissons" >Boissons</a>
-                </li>
-            </ul>
-          
-<!-- ************************************** gril du menu ***********************************-->
-
-<!-- **************************** Entrées **************************** -->
-            <div class="grid">
-                <div class="grid_1">
-                    <!-- data-category ==> js des class pour le filtre-->
-                    <div class="card" data-category="Plats" >
-
-                        <!-- image fictif aléatoire -->
-                        <img  class="card__image" src="img/La_rencontre_de_Neptune_et_de_Venus.jfif"  alt="image d'une entrée">
-                        <div class="card__inner">
-                            <h2 class="card__title" >Les entrées</h2>
-                            <p class="category">Plats</p>
+                            <!-- élément par dessus la card ==> modale -->
+                            <div class="card__overlay">
+                                <a href="#" class="card__link" data-id="modal-1" > + </a>
+                            </div>
                         </div>
+                        <!-- pour le JS -->
+                        <div class="modal" id="modal-1">
+                            <button class="modal__close">&times;</button>
 
-                        <!-- élément par dessus la card ==> modale -->
-                        <div class="card__overlay">
-                            <a href="#" class="card__link" data-id="modal-1" > + </a>
-                        </div>
-                    </div>
-                    <!-- pour le JS -->
-                    <div class="modal" id="modal-1">
-                        <button class="modal__close">&times;</button>
+                            <!-- fiche descriptif du projet-->
+                            <div class="modal__content">
+                                <div class="container">
+                                    <div class="grid">
+                                        <table>
+                                            <thead> <!-- Permet de mettre une sémentique -->
 
-                        <!-- fiche descriptif du projet-->
-                        <div class="modal__content">
-                            <div class="container">
-                                <div class="grid">
-                                    <table>
-                                        <thead> <!-- Permet de mettre une sémentique -->
+                                                <tr><!-- Permet de créer une nouvelle ligne du tableau -->
+                                                    <th colspan="2" id="entree"> Des <em>Air</em> de l'espace</th> <!--en-tête du tableau donc balise th -->
+                                                    <th>Prix</th>
+                                                </tr> 
 
-                                            <tr><!-- Permet de créer une nouvelle ligne du tableau -->
-                                                <th colspan="2" id="entree"> Des <em>Air</em> de l'espace</th> <!--en-tête du tableau donc balise th -->
-                                                <th>Prix</th>
-                                            </tr> 
+                                            </thead>
 
-                                        </thead>
+                                            <tbody>
 
-                                        <tbody>
+                                                <tr>
+                                                    <td>La salade de Jupiter <br><i>plateau de charcuterie (jambon, jambon cru, bacon,lard,roti de boeuf, roti de dinde)avec des tomates, des oeuf dur et du fromage </i></td>
 
-                                            <tr>
-                                                <td>La salade de Jupiter <br><i>plateau de charcuterie (jambon, jambon cru, bacon,lard,roti de boeuf, roti de dinde)avec des tomates, des oeuf dur et du fromage </i></td>
+                                                    <td><img src="img/salade_de_Jupiter.jfif" alt="LA salade de Juiper:plateau de charcuterie (jambon, jambon cru, bacon,lard,roti de boeuf, roti de dinde)avec des tomates, des oeuf dur et du fromage  "></td>
 
-                                                <td><img src="img/salade_de_Jupiter.jfif" alt="LA salade de Juiper:plateau de charcuterie (jambon, jambon cru, bacon,lard,roti de boeuf, roti de dinde)avec des tomates, des oeuf dur et du fromage  "></td>
+                                                    <td>17.99€</td>
+                                                </tr>
 
-                                                <td>17.99€</td>
-                                            </tr>
+                                                <tr>
+                                                    <td> Mars et sa surface <br> <i>Velouter de légumes du moment avec sa surface de crème et sa salade verte du moment avec ses fleurs comestibles</i></td>
+                                                    <td><img src="img/Mars_et_sa_surface.jpg" width="400" height="200" alt="Mars et sa surface :Velouter de légumes du moment avec sa surface de crème et sa salade verte du moment avec ses fleurs comestibles"></td>
+                                                    <td>9.00€</td>
+                                                </tr>
 
-                                            <tr>
-                                                <td> Mars et sa surface <br> <i>Velouter de légumes du moment avec sa surface de crème et sa salade verte du moment avec ses fleurs comestibles</i></td>
-                                                <td><img src="img/Mars_et_sa_surface.jpg" width="400" height="200" alt="Mars et sa surface :Velouter de légumes du moment avec sa surface de crème et sa salade verte du moment avec ses fleurs comestibles"></td>
-                                                <td>9.00€</td>
-                                            </tr>
+                                                <tr>
+                                                    <td>La rencontre de Neptune et Vénus<br> <i> Salade verte ainsi que ces fleures commestibles,avec ses tomates ces oeufs coulents et ses patate sauter accompagner de jambon</i></td>
+                                                    <td><img src="img/La_rencontre_de_Neptune_et_de_Venus.jfif" width="400" height="200" alt="La rencontre de Neptune et Vénus: Salade verte ainsi que ces fleures commestibles,avec ses tomates ces oeufs coulents et ses patate sauter accompagner de jambon"></td>
+                                                    <td>12.50€</td>
+                                                </tr>
 
-                                            <tr>
-                                                <td>La rencontre de Neptune et Vénus<br> <i> Salade verte ainsi que ces fleures commestibles,avec ses tomates ces oeufs coulents et ses patate sauter accompagner de jambon</i></td>
-                                                <td><img src="img/La_rencontre_de_Neptune_et_de_Venus.jfif" width="400" height="200" alt="La rencontre de Neptune et Vénus: Salade verte ainsi que ces fleures commestibles,avec ses tomates ces oeufs coulents et ses patate sauter accompagner de jambon"></td>
-                                                <td>12.50€</td>
-                                            </tr>
-
-                                        </tbody>
-                                    </table>
+                                            </tbody>
+                                        </table>
+                                    </div>
                                 </div>
                             </div>
                         </div>
                     </div>
-                </div>
 
-<!-- ************************************** Plats ************************************ -->
-                <div class="grid_1">
-                    <div class="card" data-category="Plats" >
+    <!-- ************************************** Plats ************************************ -->
+                    <div class="grid_1">
+                        <div class="card" data-category="Plats" >
 
-                        <!-- image fictif aléatoire -->
-                        <img  class="card__image" src="img/steak_frites.jpg" alt="image d'un plat">
-                        <div class="card__inner">
-                            <h2 class="card__title" >Plats</h2>
-                            <p class="category">Plats</p>
+                            <!-- image fictif aléatoire -->
+                            <img  class="card__image" src="img/steak_frites.jpg" alt="image d'un plat">
+                            <div class="card__inner">
+                                <h2 class="card__title" >Plats</h2>
+                                <p class="category">Plats</p>
+                            </div>
+
+                            <!-- élément par dessus la card ==> modale -->
+                            <div class="card__overlay">
+                                <a href="#" class="card__link" data-id="modal-2"> + </a>
+                            </div>
                         </div>
+                        <!-- pour le JS -->
+                        <div class="modal" id="modal-2">
+                            <button class="modal__close">&times;</button>
+                            <!-- fiche descriptif du projet-->
+                            <div class="modal__content">
+                                <div class="container">
+                                    <div class="grid">
+                                        <table>
+                                            <thead> <!-- Permet de mettre une sémentique -->
 
-                        <!-- élément par dessus la card ==> modale -->
-                        <div class="card__overlay">
-                            <a href="#" class="card__link" data-id="modal-2"> + </a>
-                        </div>
-                    </div>
-                    <!-- pour le JS -->
-                    <div class="modal" id="modal-2">
-                        <button class="modal__close">&times;</button>
-                        <!-- fiche descriptif du projet-->
-                        <div class="modal__content">
-                            <div class="container">
-                                <div class="grid">
-                                    <table>
-                                        <thead> <!-- Permet de mettre une sémentique -->
+                                                <tr><!-- Permet de créer une nouvelle ligne du tableau -->
+                                                    <th colspan="2" id="platchaud">Les flammes de <em>Feu</em></th> <!--en-tête du tableau donc balise th -->
+                                                    <th>Prix</th>
+                                                </tr> 
 
-                                            <tr><!-- Permet de créer une nouvelle ligne du tableau -->
-                                                <th colspan="2" id="platchaud">Les flammes de <em>Feu</em></th> <!--en-tête du tableau donc balise th -->
-                                                <th>Prix</th>
-                                            </tr> 
+                                            </thead>
 
-                                        </thead>
+                                            <tbody>
 
-                                        <tbody>
+                                                <tr>
+                                                    <td>La proie du <em>Lion</em> et son accompagnement <br> <i> Steak haché 250g label rouge, pâte ou frite avec une salade verte et ses tomates</i></td>
+                                                    <td><img src="img/steak_frites.jpg"width="400" height="200" alt=" assiette représentant le plat steak frites avec salade verte et tomates"></td>
+                                                    <td>15.99€</td>
+                                                </tr>
 
-                                            <tr>
-                                                <td>La proie du <em>Lion</em> et son accompagnement <br> <i> Steak haché 250g label rouge, pâte ou frite avec une salade verte et ses tomates</i></td>
-                                                <td><img src="img/steak_frites.jpg"width="400" height="200" alt=" assiette représentant le plat steak frites avec salade verte et tomates"></td>
-                                                <td>15.99€</td>
-                                            </tr>
+                                                <tr>
+                                                    <td> La prairie du <em>Bélier</em> et son paturage <br> <i> Côte de porc sauce forestière à la crème, pâte ou frite et sa salade verte accompagner de différentes fleures comestibles et herbes aromatiser </i></td>
+                                                    <td> <img src="img/La_prairie_du_belier_et_son_paturage.jfif" width="400" height="200" alt="La prairie du Bélier et son paturage: ôte de porc sauce forestière à la crème, pâte ou frite et sa salade verte accompagner de différentes fleures comestibles et herbes aromatiser "></td>
+                                                    <td>13.00€</td>
+                                                </tr>
 
-                                            <tr>
-                                                <td> La prairie du <em>Bélier</em> et son paturage <br> <i> Côte de porc sauce forestière à la crème, pâte ou frite et sa salade verte accompagner de différentes fleures comestibles et herbes aromatiser </i></td>
-                                                <td> <img src="img/La_prairie_du_belier_et_son_paturage.jfif" width="400" height="200" alt="La prairie du Bélier et son paturage: ôte de porc sauce forestière à la crème, pâte ou frite et sa salade verte accompagner de différentes fleures comestibles et herbes aromatiser "></td>
-                                                <td>13.00€</td>
-                                            </tr>
+                                                <tr>
+                                                    <td>La course des <em>Sagittaire</em> et ses armes: <i> Burger Végétarien aux champigons, ail, haricot noir, oeuf, oignon vert,chapelure, yogourt...</i></td>
+                                                    <td><img src="img/La_course_des_sagittaire_et_ses_armes.jfif" width="400" height="200" alt=" La course des Sagittaire et ses armes: Burger Végétarien aux champigons, ail, haricot noir, oeuf, oignon vert,chapelure, yogourt... "></td>
+                                                    <td>12.00€</td>
+                                                </tr>
 
-                                            <tr>
-                                                <td>La course des <em>Sagittaire</em> et ses armes: <i> Burger Végétarien aux champigons, ail, haricot noir, oeuf, oignon vert,chapelure, yogourt...</i></td>
-                                                <td><img src="img/La_course_des_sagittaire_et_ses_armes.jfif" width="400" height="200" alt=" La course des Sagittaire et ses armes: Burger Végétarien aux champigons, ail, haricot noir, oeuf, oignon vert,chapelure, yogourt... "></td>
-                                                <td>12.00€</td>
-                                            </tr>
-
-                                        </tbody>
-                                    </table>
+                                            </tbody>
+                                        </table>
+                                    </div>
                                 </div>
                             </div>
                         </div>
                     </div>
-                </div>
 
-<!-- ************************************ Desserts ********************************* -->
-                <div class="grid_1">
-                    <div class="card" data-category="Plats" >
+    <!-- ************************************ Desserts ********************************* -->
+                    <div class="grid_1">
+                        <div class="card" data-category="Plats" >
 
-                        <!-- image fictif aléatoire -->
-                        <img  class="card__image" src="img/Mousse-au-Chocolat.jpg" alt="image d'un dessert">
-                        <div class="card__inner">
-                            <h2 class="card__title" >Desserts</h2>
-                            <p class="category">Plats</p>
+                            <!-- image fictif aléatoire -->
+                            <img  class="card__image" src="img/Mousse-au-Chocolat.jpg" alt="image d'un dessert">
+                            <div class="card__inner">
+                                <h2 class="card__title" >Desserts</h2>
+                                <p class="category">Plats</p>
+                            </div>
+
+                            <!-- élément par dessus la card ==> modale -->
+                            <div class="card__overlay">
+                                <a href="#" class="card__link" data-id="modal-3"> + </a>
+                            </div>
                         </div>
+                        <!-- pour le JS -->
+                        <div class="modal" id="modal-3">
+                            <button class="modal__close">&times;</button>
+                            <!-- fiche descriptif du projet-->
+                            <div class="modal__content">
+                                <div class="container">
+                                    <div class="grid">
+                                        <table>
+                                            <thead>
 
-                        <!-- élément par dessus la card ==> modale -->
-                        <div class="card__overlay">
-                            <a href="#" class="card__link" data-id="modal-3"> + </a>
+                                                <tr>
+                                                    <th colspan="2" id="dessert">Les desserts des <em>Air</em></th>
+                                                    <th>Prix</th>
+                                                </tr>
+
+                                            </thead>
+
+                                            <tbody>
+
+                                                <tr>
+                                                    <td>Mousse des <em>géméaux</em> <br> <i>Mousse aux chocolat équitable venent du Ghana et de l'équateur</i></td>
+                                                    <td><img src="img/Mousse-au-Chocolat.jpg" width="400"  height="200" alt=" photo d'une mousse aux chocolat dans une verrine"></td>
+                                                    <td>8.99€</td>
+                                                </tr>
+
+                                                <tr>
+                                                    <td>La <em>Balance</em> de fruit de saison <br> <i> Salade de fruit de saison avec deux boules de glace maison aux choix selon disponibilité </i></td> <!-- salade de fuit avec glace-->
+                                                    <td><img src="img/La_Balance_des_fruit_de_saison.jfif" width="400" height="200" alt="salade de fuit avec boule de glace"></td>
+                                                    <td>12.99€</td>
+                                                </tr>
+
+                                                <tr>
+                                                    <td>Le <em>Verseau</em> gourmand <br> <i> Café gourmande aux miniardise de saison avec un café selon votre envie et deux boule de glace maison de votre choix selon disponibilité</i></td> <!-- café gourmant-->
+                                                    <td> <img src="img/cafe_gourmand.jfif" width="400" height="200" alt="café gourmande et ses patisserie"></td>
+                                                    <td>15.99€</td>
+                                                </tr>
+
+                                            </tbody>
+                                        </table>
+
+                                    </div>
+                                </div>
+                            </div>
                         </div>
                     </div>
-                    <!-- pour le JS -->
-                    <div class="modal" id="modal-3">
-                        <button class="modal__close">&times;</button>
-                        <!-- fiche descriptif du projet-->
-                        <div class="modal__content">
-                            <div class="container">
-                                <div class="grid">
-                                    <table>
-                                        <thead>
 
+    <!-- *********************************** Sodas ********************************** -->
+                    <div class="grid_1">
+                        <div class="card" data-category="Boissons" >
+
+                            <!-- image fictif aléatoire -->
+                            <img  class="card__image" src="./img/sodas.jpg" alt="image de plusieurs sodas">
+                            <div class="card__inner">
+                                <h2 class="card__title" >Sodas </h2>
+                                <p class="category">Boissons</p>
+                            </div>
+
+                            <!-- élément par dessus la card ==> modale -->
+                            <div class="card__overlay">
+                                <a href="#" class="card__link" data-id="modal-4"> + </a>
+                            </div>
+                        </div>
+                        <!-- pour le JS -->
+                        <div class="modal" id="modal-4">
+                            <button class="modal__close">&times;</button>
+                            <!-- fiche descriptif du projet-->
+                            <div class="modal__content">
+                                <div class="container">
+                                    <div class="grid">
+                                        <table>
                                             <tr>
-                                                <th colspan="2" id="dessert">Les desserts des <em>Air</em></th>
-                                                <th>Prix</th>
+                                                <td colspan="2" id="soda">La rivière du <em>Poisson</em> :</td>
+                                                <td>Prix</td>
                                             </tr>
 
-                                        </thead>
-
-                                        <tbody>
-
                                             <tr>
-                                                <td>Mousse des <em>géméaux</em> <br> <i>Mousse aux chocolat équitable venent du Ghana et de l'équateur</i></td>
-                                                <td><img src="img/Mousse-au-Chocolat.jpg" width="400"  height="200" alt=" photo d'une mousse aux chocolat dans une verrine"></td>
-                                                <td>8.99€</td>
+                                                <td>Coca cola:</td>
+                                                <td><img src="./img/Coca-Cola.jpg"  width="300" height="200" alt="image d'une canette de Coca Cola" > </td>
+                                                <td>4.99€</td>
                                             </tr>
 
                                             <tr>
-                                                <td>La <em>Balance</em> de fruit de saison <br> <i> Salade de fruit de saison avec deux boules de glace maison aux choix selon disponibilité </i></td> <!-- salade de fuit avec glace-->
-                                                <td><img src="img/La_Balance_des_fruit_de_saison.jfif" width="400" height="200" alt="salade de fuit avec boule de glace"></td>
+                                                <td>Pepsi :</td>
+                                                <td> <img src="./img/pepsi.jpg"  width="300" height="200" alt="canette de Pepsi" > </td>
+                                                <td>3.99€</td>
+                                            </tr>
+
+                                            <tr>
+                                                <td>Fanta :</td>
+                                                <td> <img src="./img/Fanta.jpg" width="300" height="200" alt="Bouteille en verre de la marque Fanta"> </td>
+                                                <td>3.99€</td>
+                                            </tr>
+
+                                            <tr>
+                                                <td >Oasis tropical :</td>
+                                                <td></td>
+                                                <td>3.99€</td>
+                                            </tr>
+
+                                            <tr>
+                                                <td>Oasis fruit rouge :</td>
+                                                <td></td>
+                                                <td>3.99€</td>
+                                            </tr>
+
+                                            <tr>
+                                                <td>Ice tea pêche :</td>
+                                                <td></td>
+                                                <td>3.99€</td>
+                                            </tr>
+
+                                            <tr>
+                                                <td>Ice tea light :</td>
+                                                <td></td>
+                                                <td>3.99€</td>
+                                            </tr>
+
+                                            <tr>
+                                                <td>Ice tea fruit rouge :</td>
+                                                <td></td>
+                                                <td>3.99€</td>
+                                            </tr>
+                                        </table>
+
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+    <!-- ******************************** Cocktail sans Alcool ******************************* -->
+
+                    <div class="grid_1">
+                        <div class="card" data-category="Boissons" >
+
+                            <!-- image fictif aléatoire -->
+                            <img  class="card__image" src="img/cocktail_sans_alcool.jpg"  alt="image d'un cocktail">
+                            <div class="card__inner">
+                                <h2 class="card__title" >Cocktails sans alcool</h2>
+                                <p class="category">Boissons</p>
+                            </div>
+
+                            <!-- élément par dessus la card ==> modale -->
+                            <div class="card__overlay">
+                                <a href="#" class="card__link" data-id="modal-5"> + </a>
+                            </div>
+                        </div>
+                        <!-- pour le JS -->
+                        <div class="modal" id="modal-5">
+                            <button class="modal__close">&times;</button>
+                            <!-- fiche descriptif du projet-->
+                            <div class="modal__content">
+                                <div class="container">
+                                    <div class="grid">
+                                        <table>
+                                            <tr>
+                                                <td colspan="2" id="cocktailSansAlcool">Le <em>Poisson</em> fait la fête en toute légalité ( sans alcool ):</td>
+                                                <td>Prix</td>
+                                            </tr>
+
+                                            <tr>
+                                                <td>Margarita: <br> <i> (Orange, cirton vert, sirop d'agave, sucre)</i></td>
+                                                <td><img src="img/margarita_sans_alcool.jpg" width="400"  height="200" alt="cocktail margarita sans alcool "></td>
+                                                <td>9.99€</td>
+                                            </tr>
+
+                                            <tr>
+                                                <td>Mojito menthe : <br> <i>(limonade, citron vert, feuille de menthe, glace piler, sucre)</i></td>
+                                                <td><img src="img/mojito_menthe_sans_alcool.jpg" width="400" height="200" alt=" cocktail mojito menthe sans alcool"></td>
+                                                <td>9.99€</td>
+                                            </tr>
+
+                                            <tr>
+                                                <td>Mojito Fraise : <br> <i>(limonade,jus d'orange,jus de fraise, glasse piler,fraise)</i></td>
+                                                <td><img src="img/mojito_fraise_sans_alcool.jpg" width="400" height="200"alt="cocktail mojito fraise sans alcool"></td>
+                                                <td>9.99€</td>
+                                            </tr>
+
+                                            <tr>
+                                                <td>Pina Colada:<br> <i>(ananas, coco, glaçon, orange, vanille, menthe)</i></td>
+                                                <td><img src="img/Pina_colada_sans_alcool.jfif"width="400" height="200" alt="cocktail Pina colada sans alcool"></td>
+                                                <td>9.99€</td>
+                                            </tr>
+
+                                            <tr>
+                                                <td>Sangria :<br> <i>(sucre, raisin noir, eau gazeuse, citron, orange, cannelle)</i></td>
+                                                <td><img src="img/sangria_sans_alcool.jpg" width="400" height="200" alt="cocktail Sangria sans alcool"></td>
+                                                <td>9.99€</td>
+                                            </tr>
+
+                                            <tr>
+                                                <td>Punch :<br> <i>(orange, fruit exotique, citron, sucre de canne)</i></td>
+                                                <td> <img src="img/punch_sans_alcool.jfif" width="400" height="200" alt="cocktail Punch sans alcool"></td>
+                                                <td>9.99€</td>
+                                            </tr>
+                                        </table>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+    <!-- ************************************ Cocktail Alcoolisé ********************************* -->
+                    <div class="grid_1">
+                        <div class="card" data-category="Boissons" >
+                            
+                            <!-- image fictif aléatoire -->
+                            <img  class="card__image" src="img/sexe_and_the_bitch.jfif" alt="image d'un cocktail alcoolisé">
+                            <div class="card__inner">
+                                <h2 class="card__title" >Cocktail Alcoolisé</h2>
+                                <p class="category">Boissons</p>
+                            </div>
+
+                            <!-- élément par dessus la card ==> modale -->
+                            <div class="card__overlay">
+                                <a href="#" class="card__link" data-id="modal-6"> + </a>
+                            </div>
+                        </div>
+                        <!-- pour le JS -->
+                        <div class="modal" id="modal-6">
+                            <button class="modal__close">&times;</button>
+                            <!-- fiche descriptif du projet-->
+                            <div class="modal__content">
+                                <div class="container">
+                                    <div class="grid">
+                                        <table>
+                                            <tr>
+                                                <td colspan="2" id="cocktailAvecAlcool">Le <em>Poisson</em> est tous émoustiller:</td>
+                                                <td>Prix</td>
+                                            </tr>
+
+                                            <tr>
+                                                <td>Sexe and the beach: <br> <i>( vodka, liqueur de pêche, d'ananas,cranberry)</i></td>
+                                                <td> <img src="img/sexe_and_the_bitch.jfif" width="400" height="200" alt="cocktail Sexe and the beach alcoolisé"></td>
                                                 <td>12.99€</td>
                                             </tr>
 
                                             <tr>
-                                                <td>Le <em>Verseau</em> gourmand <br> <i> Café gourmande aux miniardise de saison avec un café selon votre envie et deux boule de glace maison de votre choix selon disponibilité</i></td> <!-- café gourmant-->
-                                                <td> <img src="img/cafe_gourmand.jfif" width="400" height="200" alt="café gourmande et ses patisserie"></td>
+                                                <td>Blue Moon: <br> <i>(tequila, vodka, curaçao bleu, glaçon)</i></td>
+                                                <td> <img src="img/blue_Moon_coocktail.jfif" width="400" height="200" alt=" cocktail Blue Moon avec alcool"></td>
+                                                <td>12.99€</td>
+                                            </tr>
+
+                                            <tr>
+                                                <td>Monaco: <br> <i>(grenadine, bière, limonade)</i></td>
+                                                <td><img src="img/Monaco_cocktail.jfif" width="400" height="200" alt="cocktail Monaco avec alcool"></td>
+                                                <td>12.99€</td>
+                                            </tr>
+
+                                            <tr>
+                                                <td>Mojito menthe: <br> <i>(rhum blanc, menthe, eau gazeuse, sucre de canne, citron vert,glaçon)</i></td>
+                                                <td> <img src="img/mojito_menthe.jpeg" width="400" height="200" alt="Cocktail Mojito Menthe avec alcool"></td>
+                                                <td>12.99€</td>
+                                            </tr>
+
+                                            <tr>
+                                                <td>Mojito fraise:<br> <i>(rhum blanc, fraise, eau gazeuse, sucre de canne, citron vert,glaçon)</i></td>
+                                                <td> <img src="img/mojito_fraise.jpg" width="400" height="200" alt=" Cocktail Mojito Fraise avec alcool"></td>
+                                                <td>12.99€</td>
+                                            </tr>
+
+                                            <tr>
+                                                <td>Monkey Jam Sour: <br> <i>( whisky, angostura, confiture, citron, sucre)</i></td>
+                                                <td><img src="img/Monkey_Jam_Sour.jpg" width="400" height="200" alt="cocktail Monkey Jam Sour"></td>
+                                                <td>12.99€</td>
+                                            </tr>
+                                            <tr>
+                                                <td>Mai Tai: <br> <i>(rhum, sucre, triple sec, citron vert, orgeat, grenadine)</i></td>
+                                                <td> <img src="img/Mai_Tai.jfif" width="400" height="200" alt="cocktail Mai Tai"></td>
+                                                <td>12.99€</td>
+                                            </tr>
+
+                                            <tr>
+                                                <td>Passoa Mojito Passion: <br> <i>(liqueur passion, citron vert, menthe, sucre)</i></td>
+                                                <td> <img src="img/Passoa_mojito_passion.jpeg" width="400" height="200" alt="cocktail Passoa Mojito Passion"></td>
+                                                <td>12.99€</td>
+                                            </tr>
+
+                                            <tr>
+                                                <td>Cosmopolitan: <br> <i>(citron vert, canneberge, vodka, cointrea)</i></td>
+                                                <td><img src="img/cosmopolitan.jpg" width="400" height="200" alt="cocktail Cosmopolitain"></td>
+                                                <td>12.99€</td>
+                                            </tr>
+
+                                            <tr>
+                                                <td>Cosy: <br> <i>(cognac, chataigne, vanille, crème fraiche)</i></td>
+                                                <td> <img src="img/cosy.jfif" width="400" height="200" alt="cocktail Cosy"></td>
+                                                <td>12.99€</td>
+                                            </tr>
+                                        </table>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+    <!-- ************************************ les bières ****************************************-->
+                    <div class="grid_1">
+                        <div class="card" data-category="Boissons" >
+
+                        
+                            <img  class="card__image" src="./img/bière.jpg" alt="image d'une bière">
+                            <div class="card__inner">
+                                <h2 class="card__title" >Les Bières</h2>
+                                <p class="category">Boissons</p>
+                            </div>
+
+                            <div class="card__overlay">
+                                <a href="#" class="card__link" data-id="modal-7" > + </a>
+                            </div>
+                        </div>
+                        
+                        <div class="modal" id="modal-7">
+                            <button class="modal__close">&times;</button>
+
+                            
+                            <div class="modal__content">
+                                <div class="container">
+                                    <div class="grid">
+                                        <table>
+                                            <tr>
+                                                <td colspan="2" id="biere">Le <em>Cancer</em> est de la partie:</td>
+                                                <td>Prix</td>
+                                            </tr>
+
+                                            <tr>
+                                                <td>Bière de la lune: <br> <i>(bière blonde)</i></td>
+                                                <td>Kronembourg</td>
+                                                <td>8.99€</td>
+                                            </tr>
+
+                                            <tr>
+                                                <td>Bière de Mars: <br> <i>(bière brune)</i></td>
+                                                <td>Kronembourg</td>
+                                                <td>8.99€</td>
+                                            </tr>
+
+                                            <tr>
+                                                <td>Bière de Pluton: <br> <i>(bière blanche)</i></td>
+                                                <td>Kronembourg</td>
+                                                <td>8.99€</td>
+                                            </tr>
+
+                                            <tr>
+                                                <td>Bière de Vénus: <br> <i>(bière ambré)</i></td>
+                                                <td>Kronembourg</td>
+                                                <td>8.99€</td>
+                                            </tr>
+
+                                            <tr>
+                                                <td>Bière du Bélier: <br> <i>(bière blonde)</i></td>
+                                                <td>Météor</td>
+                                                <td>8.99€</td>
+                                            </tr>
+
+                                            <tr>
+                                                <td>Bière du Taureau: <br> <i>(bière brune)</i></td>
+                                                <td>Météor</td>
+                                                <td>8.99€</td>
+                                            </tr>
+
+                                            <tr>
+                                                <td>Bière du Poisson: <br> <i>(bière blanche)</i></td>
+                                                <td>Météor</td>
+                                                <td>8.99€</td>
+                                            </tr>
+
+                                            <tr>
+                                                <td>Bière de la Balance: <br> <i>(bière ambré)</i></td>
+                                                <td>Météor</td>
+                                                <td>8.99€</td>
+                                            </tr>
+                                        </table>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+    <!-- ********************************* Les Vins Blancs ************************************  -->
+                    <div class="grid_1">
+                        <div class="card" data-category="design" >
+
+                            
+                            <img  class="card__image" src="./img/vin_blanc.jpg" alt="image du servic pour un verre de vin Blanc">
+                            <div class="card__inner">
+                                <h2 class="card__title" >Les Vins Blanc</h2>
+                                <p class="category">Boissons</p>
+                            </div>
+
+                            
+                            <div class="card__overlay">
+                                <a href="#" class="card__link" data-id="modal-8"> + </a>
+                            </div>
+                        </div>
+
+                        <div class="modal" id="modal-8">
+                            <button class="modal__close">&times;</button>
+                            
+                            <div class="modal__content">
+                                <div class="container">
+                                    <div class="grid">
+                                        <table>
+                                            <tr>
+                                                <td colspan="3" id="vinBlanc">Les vins de la Lune Blanche:</td>
+                                            </tr>
+                                            <tr>
+                                                <td>Nom</td>
+                                                <td>Domaine</td>
+                                                <td>Prix</td>
+                                            </tr>
+
+                                            <tr>
+                                                <td>Pinot Blanc de Saturne:</td>
+                                                <td>Du domaine du Chêne</td>
+                                                <td>4.99€</td>
+                                            </tr>
+
+                                            <tr>
+                                                <td>Muscat d'Uranus:</td>
+                                                <td>De la cave d'Uranus</td>
+                                                <td>4.99€</td>
+                                            </tr>
+
+                                            <tr>
+                                                <td>Riesling de la Terre:</td>
+                                                <td>De la prairie de Mars</td>
+                                                <td>4.99€</td>
+                                            </tr>
+
+                                            <tr>
+                                                <td>Gewurtraminer de Vénus:</td>
+                                                <td>Du domaine du Soleil</td>
+                                                <td>4.99€</td>
+                                            </tr>
+
+                                            <tr>
+                                                <td>Pinot Gris de Neptune</td>
+                                                <td>Domaine de Jupiter</td>
+                                                <td>4.99€</td>
+                                            </tr>
+                                        </table>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+    <!-- *********************************** Les Vins Rouge ********************************** -->
+                    <div class="grid_1">
+                        <div class="card" data-category="Boissons" >
+
+                            
+                            <img  class="card__image" src="./img/vin_rouge.jpg" alt="image du projet">
+                            <div class="card__inner">
+                                <h2 class="card__title" >Les vins Rouge</h2>
+                                <p class="category">Boissons</p>
+                            </div>
+
+                            
+                            <div class="card__overlay">
+                                <a href="#" class="card__link" data-id="modal-9"> + </a>
+                            </div>
+                        </div>
+                    
+                        <div class="modal" id="modal-9">
+                            <button class="modal__close">&times;</button>
+                            
+                            <div class="modal__content">
+                                <div class="container">
+                                    <div class="grid">
+                                        <table>
+                                            <tr>
+                                                <td colspan="3" id="vinRouge">La Lune Rouge :</td>
+                                            </tr>
+
+                                            <tr>
+                                                <td>Nom:</td>
+                                                <td>Domaine</td>
+                                                <td>Prix</td>
+                                            </tr>
+                                
+                                            <tr>
+                                                <td>Bordeaux des constellations:</td>
+                                                <td>Du domaine de Jupiter</td>
+                                                <td>4.99€</td>
+                                            </tr>
+                                
+                                            <tr>
+                                                <td>Pinot de Neptune: <br> <i>( pinot noir)</i></td>
+                                                <td>Du domaine de Jupiter</td>
+                                                <td>4.99€</td>
+                                            </tr>
+                                        </table>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+    <!-- ****************************** Les Vins Rosée ************************************ -->
+                    <div class="grid_1">
+                        <div class="card" data-category="Boissons" >
+
+                            
+                            <img  class="card__image" src="./img/vin-rose.jpg" alt="image du projet">
+                            <div class="card__inner">
+                                <h2 class="card__title" >Les Vins Rosée </h2>
+                                <p class="category">Boissons</p>
+                            </div>
+
+                            
+                            <div class="card__overlay">
+                                <a href="#" class="card__link" data-id="modal-10"> + </a>
+                            </div>
+                        </div>
+                        
+                        <div class="modal" id="modal-10">
+                            <button class="modal__close">&times;</button>
+                            
+                            <div class="modal__content">
+                                <div class="container">
+                                    <div class="grid">
+                                        <table>
+                                            <tr>
+                                                <td colspan="3" id="vinRoser">La lune Rose :</td>
+                                            </tr>
+
+                                            <tr>
+                                                <td>Nom</td>
+                                                <td>Domaine</td>
+                                                <td>Prix</td>
+                                            </tr>
+                            
+                                            <tr>
+                                                <td>Fée de la Lune:</td>
+                                                <td>Du domaine du chêne</td>
+                                                <td>4.99€</td>
+                                            </tr>
+                            
+                                            <tr>
+                                                <td>Rosée des planètes:</td>
+                                                <td>De la cave d'Uranus</td>
+                                                <td>4.99€</td>
+                                            </tr>
+                                        </table>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+    <!-- ******************************** Les Vin Jaune ****************************-->
+                    <div class="grid_1">
+                        <div class="card" data-category="Boissons" >
+
+                    
+                            <img  class="card__image" src="./img/vin_jaune.jpg" alt="image du projet">
+                            <div class="card__inner">
+                                <h2 class="card__title" >Les Vins Jaune</h2>
+                                <p class="category">Boissons</p>
+                            </div>
+
+                            
+                            <div class="card__overlay">
+                                <a href="#" class="card__link" data-id="modal-11"> + </a>
+                            </div>
+                        </div>
+                        
+                        <div class="modal" id="modal-11">
+                            <button class="modal__close">&times;</button>
+                            
+                            <div class="modal__content">
+                                <div class="container">
+                                    <div class="grid">
+                                        <table>
+                                            <tr>
+                                                <td colspan="3" id="vinJaune">La lune Jaune :</td>
+                                            </tr>
+                            
+                                            <tr>
+                                                <td>Nom</td>
+                                                <td>Domaine</td>
+                                                <td>Prix</td>
+                                            </tr>
+                            
+                                            <tr>
+                                                <td>vin de paille: les chêne d'Or</td>
+                                                <td>Du domaine du chêne</td>
+                                                <td>6.99€</td>
+                                            </tr>
+                            
+                                            <tr>
+                                                <td>Monbaziaque de Saturne:</td>
+                                                <td>De la cave de Pluton</td>
+                                                <td>6.99€</td>
+                                            </tr>
+                            
+                                            <tr>
+                                                <td>Sauterne de la terre :</td>
+                                                <td>De la cave de Pluton</td>
+                                                <td>6.99€</td>
+                                            </tr>
+                                        </table>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+    <!-- *********************************** Vins Mousseux *********************************** -->
+                    <div class="grid_1">
+                        <div class="card" data-category="Boissons" >
+
+                            
+                            <img  class="card__image" src="./img/vin_mousseux.jpg" alt="image d'un vin mousseux">
+                            <div class="card__inner">
+                                <h2 class="card__title" >Les Vins Mousseux</h2>
+                                <p class="category">Boissons</p>
+                            </div>
+
+                        
+                            <div class="card__overlay">
+                                <a href="#" class="card__link" data-id="modal-12"> + </a>
+                            </div>
+                        </div>
+                        
+                        <div class="modal" id="modal-12">
+                            <button class="modal__close">&times;</button>
+                        >
+                            <div class="modal__content">
+                                <div class="container">
+                                    <div class="grid">
+                                        <table>
+                                            <tr>
+                                                <td colspan="3" id="cremant">La fête des Astres :</td>
+                                            </tr>
+
+                                            <tr>
+                                                <td>Nom</td>
+                                                <td>Domaine</td>
+                                                <td>Prix</td>
+                                            </tr>
+
+                                            <tr>
+                                                <td>Crémant du Chasseur: <br> <i>(crémant brut)</i></td>
+                                                <td>Du domaine du Poisson</td>
                                                 <td>15.99€</td>
                                             </tr>
 
-                                        </tbody>
-                                    </table>
+                                            <tr>
+                                                <td>Crémant d'Orion: <br> <i>(crémant brut rosée)</i></td>
+                                                <td>De la cave de Cassiopé</td>
+                                                <td>15.99€</td>
+                                            </tr>
 
+                                            <tr>
+                                                <td>Crémant de la Grande Ours: <br> <i>(crémant demi-sec)</i></td>
+                                                <td>Du domaine du Poisson</td>
+                                                <td>15.99€</td>
+                                            </tr>
+
+                                            <tr>
+                                                <td>Crémant de Cassiopé: <br> <i>(crémant  rosée demi-sec)</i></td>
+                                                <td>De la cave de Cassiopé</td>
+                                                <td>15.99€</td>
+                                            </tr>
+
+                                            <tr>
+                                                <td>Crémant du Dragon: <br> <i>(crémant sec)</i></td>
+                                                <td>Du domaine du Poisson</td>
+                                                <td>15.99€</td>
+                                            </tr>
+                                            <tr>
+
+                                                <td>Crémant du Cygne: <br> <i>(crémant rosée sec)</i></td>
+                                                <td>De la cave de Cassiopé</td>
+                                                <td>15.99€</td>
+                                            </tr>
+                                        </table>
+                                    </div>
                                 </div>
                             </div>
                         </div>
                     </div>
-                </div>
 
-<!-- *********************************** Sodas ********************************** -->
-                <div class="grid_1">
-                    <div class="card" data-category="Boissons" >
+    <!-- ***************************************** Alcool Pur *****************************-->
+                    <div class="grid_1">
+                        <div class="card" data-category="app" >
 
-                        <!-- image fictif aléatoire -->
-                        <img  class="card__image" src="./img/sodas.jpg" alt="image de plusieurs sodas">
-                        <div class="card__inner">
-                            <h2 class="card__title" >Sodas </h2>
-                            <p class="category">Boissons</p>
-                        </div>
-
-                        <!-- élément par dessus la card ==> modale -->
-                        <div class="card__overlay">
-                            <a href="#" class="card__link" data-id="modal-4"> + </a>
-                        </div>
-                    </div>
-                    <!-- pour le JS -->
-                    <div class="modal" id="modal-4">
-                        <button class="modal__close">&times;</button>
-                        <!-- fiche descriptif du projet-->
-                        <div class="modal__content">
-                            <div class="container">
-                                <div class="grid">
-                                    <table>
-                                        <tr>
-                                            <td colspan="2" id="soda">La rivière du <em>Poisson</em> :</td>
-                                            <td>Prix</td>
-                                        </tr>
-
-                                        <tr>
-                                            <td>Coca cola:</td>
-                                            <td><img src="./img/Coca-Cola.jpg"  width="300" height="200" alt="image d'une canette de Coca Cola" > </td>
-                                            <td>4.99€</td>
-                                        </tr>
-
-                                        <tr>
-                                            <td>Pepsi :</td>
-                                            <td> <img src="./img/pepsi.jpg"  width="300" height="200" alt="canette de Pepsi" > </td>
-                                            <td>3.99€</td>
-                                        </tr>
-
-                                        <tr>
-                                            <td>Fanta :</td>
-                                            <td> <img src="./img/Fanta.jpg" width="300" height="200" alt="Bouteille en verre de la marque Fanta"> </td>
-                                            <td>3.99€</td>
-                                        </tr>
-
-                                        <tr>
-                                            <td >Oasis tropical :</td>
-                                            <td></td>
-                                            <td>3.99€</td>
-                                        </tr>
-
-                                        <tr>
-                                            <td>Oasis fruit rouge :</td>
-                                            <td></td>
-                                            <td>3.99€</td>
-                                        </tr>
-
-                                        <tr>
-                                            <td>Ice tea pêche :</td>
-                                            <td></td>
-                                            <td>3.99€</td>
-                                        </tr>
-
-                                        <tr>
-                                            <td>Ice tea light :</td>
-                                            <td></td>
-                                            <td>3.99€</td>
-                                        </tr>
-
-                                        <tr>
-                                            <td>Ice tea fruit rouge :</td>
-                                            <td></td>
-                                            <td>3.99€</td>
-                                        </tr>
-                                    </table>
-
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-
-<!-- ******************************** Cocktail sans Alcool ******************************* -->
-
-                <div class="grid_1">
-                    <div class="card" data-category="Boissons" >
-
-                        <!-- image fictif aléatoire -->
-                        <img  class="card__image" src="img/cocktail_sans_alcool.jpg"  alt="image d'un cocktail">
-                        <div class="card__inner">
-                            <h2 class="card__title" >Cocktails sans alcool</h2>
-                            <p class="category">Boissons</p>
-                        </div>
-
-                        <!-- élément par dessus la card ==> modale -->
-                        <div class="card__overlay">
-                            <a href="#" class="card__link" data-id="modal-5"> + </a>
-                        </div>
-                    </div>
-                    <!-- pour le JS -->
-                    <div class="modal" id="modal-5">
-                        <button class="modal__close">&times;</button>
-                        <!-- fiche descriptif du projet-->
-                        <div class="modal__content">
-                            <div class="container">
-                                <div class="grid">
-                                    <table>
-                                        <tr>
-                                            <td colspan="2" id="cocktailSansAlcool">Le <em>Poisson</em> fait la fête en toute légalité ( sans alcool ):</td>
-                                            <td>Prix</td>
-                                        </tr>
-
-                                        <tr>
-                                            <td>Margarita: <br> <i> (Orange, cirton vert, sirop d'agave, sucre)</i></td>
-                                            <td><img src="img/margarita_sans_alcool.jpg" width="400"  height="200" alt="cocktail margarita sans alcool "></td>
-                                            <td>9.99€</td>
-                                        </tr>
-
-                                        <tr>
-                                            <td>Mojito menthe : <br> <i>(limonade, citron vert, feuille de menthe, glace piler, sucre)</i></td>
-                                            <td><img src="img/mojito_menthe_sans_alcool.jpg" width="400" height="200" alt=" cocktail mojito menthe sans alcool"></td>
-                                            <td>9.99€</td>
-                                        </tr>
-
-                                        <tr>
-                                            <td>Mojito Fraise : <br> <i>(limonade,jus d'orange,jus de fraise, glasse piler,fraise)</i></td>
-                                            <td><img src="img/mojito_fraise_sans_alcool.jpg" width="400" height="200"alt="cocktail mojito fraise sans alcool"></td>
-                                            <td>9.99€</td>
-                                        </tr>
-
-                                        <tr>
-                                            <td>Pina Colada:<br> <i>(ananas, coco, glaçon, orange, vanille, menthe)</i></td>
-                                            <td><img src="img/Pina_colada_sans_alcool.jfif"width="400" height="200" alt="cocktail Pina colada sans alcool"></td>
-                                            <td>9.99€</td>
-                                        </tr>
-
-                                        <tr>
-                                            <td>Sangria :<br> <i>(sucre, raisin noir, eau gazeuse, citron, orange, cannelle)</i></td>
-                                            <td><img src="img/sangria_sans_alcool.jpg" width="400" height="200" alt="cocktail Sangria sans alcool"></td>
-                                            <td>9.99€</td>
-                                        </tr>
-
-                                        <tr>
-                                            <td>Punch :<br> <i>(orange, fruit exotique, citron, sucre de canne)</i></td>
-                                            <td> <img src="img/punch_sans_alcool.jfif" width="400" height="200" alt="cocktail Punch sans alcool"></td>
-                                            <td>9.99€</td>
-                                        </tr>
-                                    </table>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-
-<!-- ************************************ Cocktail Alcoolisé ********************************* -->
-                <div class="grid_1">
-                    <div class="card" data-category="Boissons" >
-                        
-                        <!-- image fictif aléatoire -->
-                        <img  class="card__image" src="img/sexe_and_the_bitch.jfif" alt="image d'un cocktail alcoolisé">
-                        <div class="card__inner">
-                            <h2 class="card__title" >Cocktail Alcoolisé</h2>
-                            <p class="category">Boissons</p>
-                        </div>
-
-                        <!-- élément par dessus la card ==> modale -->
-                        <div class="card__overlay">
-                            <a href="#" class="card__link" data-id="modal-6"> + </a>
-                        </div>
-                    </div>
-                    <!-- pour le JS -->
-                    <div class="modal" id="modal-6">
-                        <button class="modal__close">&times;</button>
-                        <!-- fiche descriptif du projet-->
-                        <div class="modal__content">
-                            <div class="container">
-                                <div class="grid">
-                                    <table>
-                                        <tr>
-                                            <td colspan="2" id="cocktailAvecAlcool">Le <em>Poisson</em> est tous émoustiller:</td>
-                                            <td>Prix</td>
-                                        </tr>
-
-                                        <tr>
-                                            <td>Sexe and the beach: <br> <i>( vodka, liqueur de pêche, d'ananas,cranberry)</i></td>
-                                            <td> <img src="img/sexe_and_the_bitch.jfif" width="400" height="200" alt="cocktail Sexe and the beach alcoolisé"></td>
-                                            <td>12.99€</td>
-                                        </tr>
-
-                                        <tr>
-                                            <td>Blue Moon: <br> <i>(tequila, vodka, curaçao bleu, glaçon)</i></td>
-                                            <td> <img src="img/blue_Moon_coocktail.jfif" width="400" height="200" alt=" cocktail Blue Moon avec alcool"></td>
-                                            <td>12.99€</td>
-                                        </tr>
-
-                                        <tr>
-                                            <td>Monaco: <br> <i>(grenadine, bière, limonade)</i></td>
-                                            <td><img src="img/Monaco_cocktail.jfif" width="400" height="200" alt="cocktail Monaco avec alcool"></td>
-                                            <td>12.99€</td>
-                                        </tr>
-
-                                        <tr>
-                                            <td>Mojito menthe: <br> <i>(rhum blanc, menthe, eau gazeuse, sucre de canne, citron vert,glaçon)</i></td>
-                                            <td> <img src="img/mojito_menthe.jpeg" width="400" height="200" alt="Cocktail Mojito Menthe avec alcool"></td>
-                                            <td>12.99€</td>
-                                        </tr>
-
-                                        <tr>
-                                            <td>Mojito fraise:<br> <i>(rhum blanc, fraise, eau gazeuse, sucre de canne, citron vert,glaçon)</i></td>
-                                            <td> <img src="img/mojito_fraise.jpg" width="400" height="200" alt=" Cocktail Mojito Fraise avec alcool"></td>
-                                            <td>12.99€</td>
-                                        </tr>
-
-                                        <tr>
-                                            <td>Monkey Jam Sour: <br> <i>( whisky, angostura, confiture, citron, sucre)</i></td>
-                                            <td><img src="img/Monkey_Jam_Sour.jpg" width="400" height="200" alt="cocktail Monkey Jam Sour"></td>
-                                            <td>12.99€</td>
-                                        </tr>
-                                        <tr>
-                                            <td>Mai Tai: <br> <i>(rhum, sucre, triple sec, citron vert, orgeat, grenadine)</i></td>
-                                            <td> <img src="img/Mai_Tai.jfif" width="400" height="200" alt="cocktail Mai Tai"></td>
-                                            <td>12.99€</td>
-                                        </tr>
-
-                                        <tr>
-                                            <td>Passoa Mojito Passion: <br> <i>(liqueur passion, citron vert, menthe, sucre)</i></td>
-                                            <td> <img src="img/Passoa_mojito_passion.jpeg" width="400" height="200" alt="cocktail Passoa Mojito Passion"></td>
-                                            <td>12.99€</td>
-                                        </tr>
-
-                                        <tr>
-                                            <td>Cosmopolitan: <br> <i>(citron vert, canneberge, vodka, cointrea)</i></td>
-                                            <td><img src="img/cosmopolitan.jpg" width="400" height="200" alt="cocktail Cosmopolitain"></td>
-                                            <td>12.99€</td>
-                                        </tr>
-
-                                        <tr>
-                                            <td>Cosy: <br> <i>(cognac, chataigne, vanille, crème fraiche)</i></td>
-                                            <td> <img src="img/cosy.jfif" width="400" height="200" alt="cocktail Cosy"></td>
-                                            <td>12.99€</td>
-                                        </tr>
-                                    </table>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-
-<!-- ************************************ les bières ****************************************-->
-                <div class="grid_1">
-                    <div class="card" data-category="Boissons" >
-
-                       
-                        <img  class="card__image" src="./img/bière.jpg" alt="image d'une bière">
-                        <div class="card__inner">
-                            <h2 class="card__title" >Les Bières</h2>
-                            <p class="category">Boissons</p>
-                        </div>
-
-                        <div class="card__overlay">
-                            <a href="#" class="card__link" data-id="modal-7" > + </a>
-                        </div>
-                    </div>
-                    
-                    <div class="modal" id="modal-7">
-                        <button class="modal__close">&times;</button>
-
-                        
-                        <div class="modal__content">
-                            <div class="container">
-                                <div class="grid">
-                                    <table>
-                                        <tr>
-                                            <td colspan="2" id="biere">Le <em>Cancer</em> est de la partie:</td>
-                                            <td>Prix</td>
-                                        </tr>
-
-                                        <tr>
-                                            <td>Bière de la lune: <br> <i>(bière blonde)</i></td>
-                                            <td>Kronembourg</td>
-                                            <td>8.99€</td>
-                                        </tr>
-
-                                        <tr>
-                                            <td>Bière de Mars: <br> <i>(bière brune)</i></td>
-                                            <td>Kronembourg</td>
-                                            <td>8.99€</td>
-                                        </tr>
-
-                                        <tr>
-                                            <td>Bière de Pluton: <br> <i>(bière blanche)</i></td>
-                                            <td>Kronembourg</td>
-                                            <td>8.99€</td>
-                                        </tr>
-
-                                        <tr>
-                                            <td>Bière de Vénus: <br> <i>(bière ambré)</i></td>
-                                            <td>Kronembourg</td>
-                                            <td>8.99€</td>
-                                        </tr>
-
-                                        <tr>
-                                            <td>Bière du Bélier: <br> <i>(bière blonde)</i></td>
-                                            <td>Météor</td>
-                                            <td>8.99€</td>
-                                        </tr>
-
-                                        <tr>
-                                            <td>Bière du Taureau: <br> <i>(bière brune)</i></td>
-                                            <td>Météor</td>
-                                            <td>8.99€</td>
-                                        </tr>
-
-                                        <tr>
-                                            <td>Bière du Poisson: <br> <i>(bière blanche)</i></td>
-                                            <td>Météor</td>
-                                            <td>8.99€</td>
-                                        </tr>
-
-                                        <tr>
-                                            <td>Bière de la Balance: <br> <i>(bière ambré)</i></td>
-                                            <td>Météor</td>
-                                            <td>8.99€</td>
-                                        </tr>
-                                    </table>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-
-<!-- ********************************* Les Vins Blancs ************************************  -->
-                <div class="grid_1">
-                    <div class="card" data-category="design" >
-
-                        
-                        <img  class="card__image" src="./img/vin_blanc.jpg" alt="image du servic pour un verre de vin Blanc">
-                        <div class="card__inner">
-                            <h2 class="card__title" >Les Vins Blanc</h2>
-                            <p class="category">Boissons</p>
-                        </div>
-
-                        
-                        <div class="card__overlay">
-                            <a href="#" class="card__link" data-id="modal-8"> + </a>
-                        </div>
-                    </div>
-
-                    <div class="modal" id="modal-8">
-                        <button class="modal__close">&times;</button>
-                        
-                        <div class="modal__content">
-                            <div class="container">
-                                <div class="grid">
-                                    <table>
-                                        <tr>
-                                            <td colspan="3" id="vinBlanc">Les vins de la Lune Blanche:</td>
-                                        </tr>
-                                        <tr>
-                                            <td>Nom</td>
-                                            <td>Domaine</td>
-                                            <td>Prix</td>
-                                        </tr>
-
-                                        <tr>
-                                            <td>Pinot Blanc de Saturne:</td>
-                                            <td>Du domaine du Chêne</td>
-                                            <td>4.99€</td>
-                                        </tr>
-
-                                        <tr>
-                                            <td>Muscat d'Uranus:</td>
-                                            <td>De la cave d'Uranus</td>
-                                            <td>4.99€</td>
-                                        </tr>
-
-                                        <tr>
-                                            <td>Riesling de la Terre:</td>
-                                            <td>De la prairie de Mars</td>
-                                            <td>4.99€</td>
-                                        </tr>
-
-                                        <tr>
-                                            <td>Gewurtraminer de Vénus:</td>
-                                            <td>Du domaine du Soleil</td>
-                                            <td>4.99€</td>
-                                        </tr>
-
-                                        <tr>
-                                            <td>Pinot Gris de Neptune</td>
-                                            <td>Domaine de Jupiter</td>
-                                            <td>4.99€</td>
-                                        </tr>
-                                    </table>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-
-<!-- *********************************** Les Vins Rouge ********************************** -->
-                <div class="grid_1">
-                    <div class="card" data-category="Boissons" >
-
-                        
-                        <img  class="card__image" src="./img/vin_rouge.jpg" alt="image du projet">
-                        <div class="card__inner">
-                            <h2 class="card__title" >Les vins Rouge</h2>
-                            <p class="category">Boissons</p>
-                        </div>
-
-                        
-                        <div class="card__overlay">
-                            <a href="#" class="card__link" data-id="modal-9"> + </a>
-                        </div>
-                    </div>
-                   
-                    <div class="modal" id="modal-9">
-                        <button class="modal__close">&times;</button>
-                        
-                        <div class="modal__content">
-                            <div class="container">
-                                <div class="grid">
-                                    <table>
-                                        <tr>
-                                            <td colspan="3" id="vinRouge">La Lune Rouge :</td>
-                                        </tr>
-
-                                        <tr>
-                                            <td>Nom:</td>
-                                            <td>Domaine</td>
-                                            <td>Prix</td>
-                                        </tr>
                             
-                                        <tr>
-                                            <td>Bordeaux des constellations:</td>
-                                            <td>Du domaine de Jupiter</td>
-                                            <td>4.99€</td>
-                                        </tr>
+                            <img  class="card__image" src="./img/alcool-pur.jpg" alt="image d'un verre contenant de l'alcool pur">
+                            <div class="card__inner">
+                                <h2 class="card__title" >Alcool Pur</h2>
+                                <p class="category">Boissons</p>
+                            </div>
+
+                        
+                            <div class="card__overlay">
+                                <a href="#" class="card__link" data-id="modal-13"> + </a>
+                            </div>
+                        </div>
+                        
+                        <div class="modal" id="modal-13">
+                            <button class="modal__close">&times;</button>
+                        >
+                            <div class="modal__content">
+                                <div class="container">
+                                    <div class="grid">
+                                        <table>
+                                            <tr>
+                                                <td colspan="3" id="alcoolPure">La piqure du <em>scorpion</em>:</td>
+                                            </tr>
+
+                                            <tr>
+                                                <td>Nom</td>
+                                                <td>Domaine</td>
+                                                <td>Prix</td>
+                                            </tr>
+
+                                            <tr>
+                                                <td>Vodka de Jupiter:</td>
+                                                <td>De la distillerie des Astres</td>
+                                                <td>8.99€</td>
+                                            </tr>
+
+                                            <tr>
+                                                <td>Wisky d'Uranus:</td>
+                                                <td>De la distillerie des Astres </td>
+                                                <td>8.99€</td>
+                                            </tr>
+
+                                            <tr>
+                                                <td>L'eau de vie poire de Mars:</td>
+                                                <td>De la distillerie des Astres</td>
+                                                <td>6.99€</td>
+                                            </tr>
+
+                                            <tr>
+                                                <td>L'eau de vie mirabelle du solieil:</td>
+                                                <td>De la distillerie des Astres</td>
+                                                <td>6.99€</td>
+                                            </tr>
+
+                                            <tr>
+                                                <td>L'Abscinte de Pluton:</td>
+                                                <td>De la distillerie des Astres</td>
+                                                <td>8.99€</td>
+                                            </tr>
+
+                                            <tr>
+                                                <td>Smirnoffe de Vénus:</td>
+                                                <td>De la distillerie des Astres</td>
+                                                <td>4.99€</td>
+                                            </tr>
+                                        </table>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="grid_1">
+                        <div class="card" data-category="app" >
+
                             
-                                        <tr>
-                                            <td>Pinot de Neptune: <br> <i>( pinot noir)</i></td>
-                                            <td>Du domaine de Jupiter</td>
-                                            <td>4.99€</td>
-                                        </tr>
-                                    </table>
-                                </div>
+                            <img  class="card__image" src="./img/Générateur_de_mot_de_passe_image.JPG" alt="image du projet">
+                            <div class="card__inner">
+                                <h2 class="card__title" >Générateur de mot de passe</h2>
+                                <p class="category">APPLICATION</p>
+                            </div>
+
+                        
+                            <div class="card__overlay">
+                                <a href="#" class="card__link" data-id="modal-6"> + </a>
                             </div>
                         </div>
-                    </div>
-                </div>
-
-<!-- ****************************** Les Vins Rosée ************************************ -->
-                <div class="grid_1">
-                    <div class="card" data-category="Boissons" >
-
                         
-                        <img  class="card__image" src="./img/vin-rose.jpg" alt="image du projet">
-                        <div class="card__inner">
-                            <h2 class="card__title" >Les Vins Rosée </h2>
-                            <p class="category">Boissons</p>
-                        </div>
+                        <div class="modal" id="modal-6">
+                            <button class="modal__close">&times;</button>
+                        >
+                            <div class="modal__content">
+                                <div class="container">
+                                    <div class="grid">
+                                        <div class="grid__item">
+                                            <img src="./img/generateur_1.JPG" class="card__image" alt=" photos projet XY">
+                                            <img src="./img/generateur_2.JPG" class="card__image" alt=" photos projet XY">
+                                        </div>
+                                        <div class="grid__item ">
+                                        
+                                            <h4 class="mondal__title h2" >Générateur de mot de passe</h4>
 
-                        
-                        <div class="card__overlay">
-                            <a href="#" class="card__link" data-id="modal-10"> + </a>
-                        </div>
-                    </div>
-                    
-                    <div class="modal" id="modal-10">
-                        <button class="modal__close">&times;</button>
-                        
-                        <div class="modal__content">
-                            <div class="container">
-                                <div class="grid">
-                                    <table>
-                                        <tr>
-                                            <td colspan="3" id="vinRoser">La lune Rose :</td>
-                                        </tr>
+                                            <p>
+                                                <svg xmlns="http://www.w3.org/2000/svg" height="15" width="15" viewBox="0 0 448 512"><path opacity="1" fill="#1E3050" d="M152 24c0-13.3-10.7-24-24-24s-24 10.7-24 24V64H64C28.7 64 0 92.7 0 128v16 48V448c0 35.3 28.7 64 64 64H384c35.3 0 64-28.7 64-64V192 144 128c0-35.3-28.7-64-64-64H344V24c0-13.3-10.7-24-24-24s-24 10.7-24 24V64H152V24zM48 192H400V448c0 8.8-7.2 16-16 16H64c-8.8 0-16-7.2-16-16V192z"/></svg>
+                                                <i>Année : 2023</i>
+                                            </p>
 
-                                        <tr>
-                                            <td>Nom</td>
-                                            <td>Domaine</td>
-                                            <td>Prix</td>
-                                        </tr>
-                        
-                                        <tr>
-                                            <td>Fée de la Lune:</td>
-                                            <td>Du domaine du chêne</td>
-                                            <td>4.99€</td>
-                                        </tr>
-                        
-                                        <tr>
-                                            <td>Rosée des planètes:</td>
-                                            <td>De la cave d'Uranus</td>
-                                            <td>4.99€</td>
-                                        </tr>
-                                    </table>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
+                                            <p class="category" >
+                                                <svg xmlns="http://www.w3.org/2000/svg" height="15" width="15" viewBox="0 0 448 512"><path d="M0 80V229.5c0 17 6.7 33.3 18.7 45.3l176 176c25 25 65.5 25 90.5 0L418.7 317.3c25-25 25-65.5 0-90.5l-176-176c-12-12-28.3-18.7-45.3-18.7H48C21.5 32 0 53.5 0 80zm112 32a32 32 0 1 1 0 64 32 32 0 1 1 0-64z"/></svg>
+                                                Application
+                                            </p>
 
-<!-- ******************************** Les Vin Jaune ****************************-->
-                <div class="grid_1">
-                    <div class="card" data-category="Boissons" >
+                                            <p>
+                                                Là j'ai tous simplement suivit un tuto sur YouTube. Car j'avais du mal à trouver des mots de passe pour mes différetens comptes.
+                                            </p>
 
-                 
-                        <img  class="card__image" src="./img/vin_jaune.jpg" alt="image du projet">
-                        <div class="card__inner">
-                            <h2 class="card__title" >Les Vins Jaune</h2>
-                            <p class="category">Boissons</p>
-                        </div>
+                                            <h5 class="h3">Informations</h5>
 
-                        
-                        <div class="card__overlay">
-                            <a href="#" class="card__link" data-id="modal-11"> + </a>
-                        </div>
-                    </div>
-                    
-                    <div class="modal" id="modal-11">
-                        <button class="modal__close">&times;</button>
-                        
-                        <div class="modal__content">
-                            <div class="container">
-                                <div class="grid">
-                                    <table>
-                                        <tr>
-                                            <td colspan="3" id="vinJaune">La lune Jaune :</td>
-                                        </tr>
-                        
-                                        <tr>
-                                            <td>Nom</td>
-                                            <td>Domaine</td>
-                                            <td>Prix</td>
-                                        </tr>
-                        
-                                        <tr>
-                                            <td>vin de paille: les chêne d'Or</td>
-                                            <td>Du domaine du chêne</td>
-                                            <td>6.99€</td>
-                                        </tr>
-                        
-                                        <tr>
-                                            <td>Monbaziaque de Saturne:</td>
-                                            <td>De la cave de Pluton</td>
-                                            <td>6.99€</td>
-                                        </tr>
-                        
-                                        <tr>
-                                            <td>Sauterne de la terre :</td>
-                                            <td>De la cave de Pluton</td>
-                                            <td>6.99€</td>
-                                        </tr>
-                                    </table>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
+                                            <p>
+                                                J'ai ensuite adapter à mes besoins et rajouter un bouton pour les majuscules. Pour pouvoir choisir si je les veux ou pas dans le mot de passe.
+                                            </p>
 
-<!-- *********************************** Vins Mousseux *********************************** -->
-                <div class="grid_1">
-                    <div class="card" data-category="Boissons" >
+                                            <h5 class="h3">Technologies</h5>
 
-                        
-                        <img  class="card__image" src="./img/vin_mousseux.jpg" alt="image d'un vin mousseux">
-                        <div class="card__inner">
-                            <h2 class="card__title" >Les Vins Mousseux</h2>
-                            <p class="category">Boissons</p>
-                        </div>
+                                            <ul>
+                                                <li>HTML</li>
+                                                <li>CSS</li>
+                                                <li>Javascript</li>
+                                            </ul>
 
-                       
-                        <div class="card__overlay">
-                            <a href="#" class="card__link" data-id="modal-12"> + </a>
-                        </div>
-                    </div>
-                    
-                    <div class="modal" id="modal-12">
-                        <button class="modal__close">&times;</button>
-                       >
-                        <div class="modal__content">
-                            <div class="container">
-                                <div class="grid">
-                                    <table>
-                                        <tr>
-                                            <td colspan="3" id="cremant">La fête des Astres :</td>
-                                        </tr>
-
-                                        <tr>
-                                            <td>Nom</td>
-                                            <td>Domaine</td>
-                                            <td>Prix</td>
-                                        </tr>
-
-                                        <tr>
-                                            <td>Crémant du Chasseur: <br> <i>(crémant brut)</i></td>
-                                            <td>Du domaine du Poisson</td>
-                                            <td>15.99€</td>
-                                        </tr>
-
-                                        <tr>
-                                            <td>Crémant d'Orion: <br> <i>(crémant brut rosée)</i></td>
-                                            <td>De la cave de Cassiopé</td>
-                                            <td>15.99€</td>
-                                        </tr>
-
-                                        <tr>
-                                            <td>Crémant de la Grande Ours: <br> <i>(crémant demi-sec)</i></td>
-                                            <td>Du domaine du Poisson</td>
-                                            <td>15.99€</td>
-                                        </tr>
-
-                                        <tr>
-                                            <td>Crémant de Cassiopé: <br> <i>(crémant  rosée demi-sec)</i></td>
-                                            <td>De la cave de Cassiopé</td>
-                                            <td>15.99€</td>
-                                        </tr>
-
-                                        <tr>
-                                            <td>Crémant du Dragon: <br> <i>(crémant sec)</i></td>
-                                            <td>Du domaine du Poisson</td>
-                                            <td>15.99€</td>
-                                        </tr>
-                                        <tr>
-
-                                            <td>Crémant du Cygne: <br> <i>(crémant rosée sec)</i></td>
-                                            <td>De la cave de Cassiopé</td>
-                                            <td>15.99€</td>
-                                        </tr>
-                                    </table>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-
-<!-- ***************************************** Alcool Pur *****************************-->
-                <div class="grid_1">
-                    <div class="card" data-category="app" >
-
-                        
-                        <img  class="card__image" src="./img/alcool-pur.jpg" alt="image d'un verre contenant de l'alcool pur">
-                        <div class="card__inner">
-                            <h2 class="card__title" >Alcool Pur</h2>
-                            <p class="category">Boissons</p>
-                        </div>
-
-                       
-                        <div class="card__overlay">
-                            <a href="#" class="card__link" data-id="modal-13"> + </a>
-                        </div>
-                    </div>
-                    
-                    <div class="modal" id="modal-13">
-                        <button class="modal__close">&times;</button>
-                       >
-                        <div class="modal__content">
-                            <div class="container">
-                                <div class="grid">
-                                    <table>
-                                        <tr>
-                                            <td colspan="3" id="alcoolPure">La piqure du <em>scorpion</em>:</td>
-                                        </tr>
-
-                                        <tr>
-                                            <td>Nom</td>
-                                            <td>Domaine</td>
-                                            <td>Prix</td>
-                                        </tr>
-
-                                        <tr>
-                                            <td>Vodka de Jupiter:</td>
-                                            <td>De la distillerie des Astres</td>
-                                            <td>8.99€</td>
-                                        </tr>
-
-                                        <tr>
-                                            <td>Wisky d'Uranus:</td>
-                                            <td>De la distillerie des Astres </td>
-                                            <td>8.99€</td>
-                                        </tr>
-
-                                        <tr>
-                                            <td>L'eau de vie poire de Mars:</td>
-                                            <td>De la distillerie des Astres</td>
-                                            <td>6.99€</td>
-                                        </tr>
-
-                                        <tr>
-                                            <td>L'eau de vie mirabelle du solieil:</td>
-                                            <td>De la distillerie des Astres</td>
-                                            <td>6.99€</td>
-                                        </tr>
-
-                                        <tr>
-                                            <td>L'Abscinte de Pluton:</td>
-                                            <td>De la distillerie des Astres</td>
-                                            <td>8.99€</td>
-                                        </tr>
-
-                                        <tr>
-                                            <td>Smirnoffe de Vénus:</td>
-                                            <td>De la distillerie des Astres</td>
-                                            <td>4.99€</td>
-                                        </tr>
-                                    </table>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-
-                <div class="grid_1">
-                    <div class="card" data-category="app" >
-
-                        
-                        <img  class="card__image" src="./img/Générateur_de_mot_de_passe_image.JPG" alt="image du projet">
-                        <div class="card__inner">
-                            <h2 class="card__title" >Générateur de mot de passe</h2>
-                            <p class="category">APPLICATION</p>
-                        </div>
-
-                       
-                        <div class="card__overlay">
-                            <a href="#" class="card__link" data-id="modal-6"> + </a>
-                        </div>
-                    </div>
-                    
-                    <div class="modal" id="modal-6">
-                        <button class="modal__close">&times;</button>
-                       >
-                        <div class="modal__content">
-                            <div class="container">
-                                <div class="grid">
-                                    <div class="grid__item">
-                                        <img src="./img/generateur_1.JPG" class="card__image" alt=" photos projet XY">
-                                        <img src="./img/generateur_2.JPG" class="card__image" alt=" photos projet XY">
-                                    </div>
-                                    <div class="grid__item ">
-                                       
-                                        <h4 class="mondal__title h2" >Générateur de mot de passe</h4>
-
-                                        <p>
-                                            <svg xmlns="http://www.w3.org/2000/svg" height="15" width="15" viewBox="0 0 448 512"><path opacity="1" fill="#1E3050" d="M152 24c0-13.3-10.7-24-24-24s-24 10.7-24 24V64H64C28.7 64 0 92.7 0 128v16 48V448c0 35.3 28.7 64 64 64H384c35.3 0 64-28.7 64-64V192 144 128c0-35.3-28.7-64-64-64H344V24c0-13.3-10.7-24-24-24s-24 10.7-24 24V64H152V24zM48 192H400V448c0 8.8-7.2 16-16 16H64c-8.8 0-16-7.2-16-16V192z"/></svg>
-                                            <i>Année : 2023</i>
-                                        </p>
-
-                                        <p class="category" >
-                                            <svg xmlns="http://www.w3.org/2000/svg" height="15" width="15" viewBox="0 0 448 512"><path d="M0 80V229.5c0 17 6.7 33.3 18.7 45.3l176 176c25 25 65.5 25 90.5 0L418.7 317.3c25-25 25-65.5 0-90.5l-176-176c-12-12-28.3-18.7-45.3-18.7H48C21.5 32 0 53.5 0 80zm112 32a32 32 0 1 1 0 64 32 32 0 1 1 0-64z"/></svg>
-                                            Application
-                                        </p>
-
-                                        <p>
-                                            Là j'ai tous simplement suivit un tuto sur YouTube. Car j'avais du mal à trouver des mots de passe pour mes différetens comptes.
-                                        </p>
-
-                                        <h5 class="h3">Informations</h5>
-
-                                        <p>
-                                            J'ai ensuite adapter à mes besoins et rajouter un bouton pour les majuscules. Pour pouvoir choisir si je les veux ou pas dans le mot de passe.
-                                        </p>
-
-                                        <h5 class="h3">Technologies</h5>
-
-                                        <ul>
-                                            <li>HTML</li>
-                                            <li>CSS</li>
-                                            <li>Javascript</li>
-                                        </ul>
-
+                                        </div>
                                     </div>
                                 </div>
                             </div>
                         </div>
                     </div>
-                </div>
 
-                <div class="grid_1">
-                    <div class="card" data-category="app" >
+                    <div class="grid_1">
+                        <div class="card" data-category="app" >
+
+                            
+                            <img  class="card__image" src="./img/Générateur_de_mot_de_passe_image.JPG" alt="image du projet">
+                            <div class="card__inner">
+                                <h2 class="card__title" >Générateur de mot de passe</h2>
+                                <p class="category">APPLICATION</p>
+                            </div>
 
                         
-                        <img  class="card__image" src="./img/Générateur_de_mot_de_passe_image.JPG" alt="image du projet">
-                        <div class="card__inner">
-                            <h2 class="card__title" >Générateur de mot de passe</h2>
-                            <p class="category">APPLICATION</p>
+                            <div class="card__overlay">
+                                <a href="#" class="card__link" data-id="modal-6"> + </a>
+                            </div>
                         </div>
+                        
+                        <div class="modal" id="modal-6">
+                            <button class="modal__close">&times;</button>
+                        >
+                            <div class="modal__content">
+                                <div class="container">
+                                    <div class="grid">
+                                        <div class="grid__item">
+                                            <img src="./img/generateur_1.JPG" class="card__image" alt=" photos projet XY">
+                                            <img src="./img/generateur_2.JPG" class="card__image" alt=" photos projet XY">
+                                        </div>
+                                        <div class="grid__item ">
+                                        
+                                            <h4 class="mondal__title h2" >Générateur de mot de passe</h4>
 
-                       
-                        <div class="card__overlay">
-                            <a href="#" class="card__link" data-id="modal-6"> + </a>
-                        </div>
-                    </div>
-                    
-                    <div class="modal" id="modal-6">
-                        <button class="modal__close">&times;</button>
-                       >
-                        <div class="modal__content">
-                            <div class="container">
-                                <div class="grid">
-                                    <div class="grid__item">
-                                        <img src="./img/generateur_1.JPG" class="card__image" alt=" photos projet XY">
-                                        <img src="./img/generateur_2.JPG" class="card__image" alt=" photos projet XY">
-                                    </div>
-                                    <div class="grid__item ">
-                                       
-                                        <h4 class="mondal__title h2" >Générateur de mot de passe</h4>
+                                            <p>
+                                                <svg xmlns="http://www.w3.org/2000/svg" height="15" width="15" viewBox="0 0 448 512"><path opacity="1" fill="#1E3050" d="M152 24c0-13.3-10.7-24-24-24s-24 10.7-24 24V64H64C28.7 64 0 92.7 0 128v16 48V448c0 35.3 28.7 64 64 64H384c35.3 0 64-28.7 64-64V192 144 128c0-35.3-28.7-64-64-64H344V24c0-13.3-10.7-24-24-24s-24 10.7-24 24V64H152V24zM48 192H400V448c0 8.8-7.2 16-16 16H64c-8.8 0-16-7.2-16-16V192z"/></svg>
+                                                <i>Année : 2023</i>
+                                            </p>
 
-                                        <p>
-                                            <svg xmlns="http://www.w3.org/2000/svg" height="15" width="15" viewBox="0 0 448 512"><path opacity="1" fill="#1E3050" d="M152 24c0-13.3-10.7-24-24-24s-24 10.7-24 24V64H64C28.7 64 0 92.7 0 128v16 48V448c0 35.3 28.7 64 64 64H384c35.3 0 64-28.7 64-64V192 144 128c0-35.3-28.7-64-64-64H344V24c0-13.3-10.7-24-24-24s-24 10.7-24 24V64H152V24zM48 192H400V448c0 8.8-7.2 16-16 16H64c-8.8 0-16-7.2-16-16V192z"/></svg>
-                                            <i>Année : 2023</i>
-                                        </p>
+                                            <p class="category" >
+                                                <svg xmlns="http://www.w3.org/2000/svg" height="15" width="15" viewBox="0 0 448 512"><path d="M0 80V229.5c0 17 6.7 33.3 18.7 45.3l176 176c25 25 65.5 25 90.5 0L418.7 317.3c25-25 25-65.5 0-90.5l-176-176c-12-12-28.3-18.7-45.3-18.7H48C21.5 32 0 53.5 0 80zm112 32a32 32 0 1 1 0 64 32 32 0 1 1 0-64z"/></svg>
+                                                Application
+                                            </p>
 
-                                        <p class="category" >
-                                            <svg xmlns="http://www.w3.org/2000/svg" height="15" width="15" viewBox="0 0 448 512"><path d="M0 80V229.5c0 17 6.7 33.3 18.7 45.3l176 176c25 25 65.5 25 90.5 0L418.7 317.3c25-25 25-65.5 0-90.5l-176-176c-12-12-28.3-18.7-45.3-18.7H48C21.5 32 0 53.5 0 80zm112 32a32 32 0 1 1 0 64 32 32 0 1 1 0-64z"/></svg>
-                                            Application
-                                        </p>
+                                            <p>
+                                                Là j'ai tous simplement suivit un tuto sur YouTube. Car j'avais du mal à trouver des mots de passe pour mes différetens comptes.
+                                            </p>
 
-                                        <p>
-                                            Là j'ai tous simplement suivit un tuto sur YouTube. Car j'avais du mal à trouver des mots de passe pour mes différetens comptes.
-                                        </p>
+                                            <h5 class="h3">Informations</h5>
 
-                                        <h5 class="h3">Informations</h5>
+                                            <p>
+                                                J'ai ensuite adapter à mes besoins et rajouter un bouton pour les majuscules. Pour pouvoir choisir si je les veux ou pas dans le mot de passe.
+                                            </p>
 
-                                        <p>
-                                            J'ai ensuite adapter à mes besoins et rajouter un bouton pour les majuscules. Pour pouvoir choisir si je les veux ou pas dans le mot de passe.
-                                        </p>
+                                            <h5 class="h3">Technologies</h5>
 
-                                        <h5 class="h3">Technologies</h5>
+                                            <ul>
+                                                <li>HTML</li>
+                                                <li>CSS</li>
+                                                <li>Javascript</li>
+                                            </ul>
 
-                                        <ul>
-                                            <li>HTML</li>
-                                            <li>CSS</li>
-                                            <li>Javascript</li>
-                                        </ul>
-
+                                        </div>
                                     </div>
                                 </div>
                             </div>
                         </div>
                     </div>
-                </div>
 
-<!-- card suplémentaire pour exemple si besoin
-                <div class="grid_1">
-                    <div class="card" data-category="app" >
+    <!-- card suplémentaire pour exemple si besoin
+                    <div class="grid_1">
+                        <div class="card" data-category="app" >
+
+                            
+                            <img  class="card__image" src="./img/Générateur_de_mot_de_passe_image.JPG" alt="image du projet">
+                            <div class="card__inner">
+                                <h2 class="card__title" >Générateur de mot de passe</h2>
+                                <p class="category">APPLICATION</p>
+                            </div>
 
                         
-                        <img  class="card__image" src="./img/Générateur_de_mot_de_passe_image.JPG" alt="image du projet">
-                        <div class="card__inner">
-                            <h2 class="card__title" >Générateur de mot de passe</h2>
-                            <p class="category">APPLICATION</p>
+                            <div class="card__overlay">
+                                <a href="#" class="card__link" data-id="modal-6"> + </a> changer le numéro ici
+                            </div>
                         </div>
+                        
+                        <div class="modal" id="modal-6"> changer le numéro ici aussi
+                            <button class="modal__close">&times;</button>
+                        >
+                            <div class="modal__content">
+                                <div class="container">
+                                    <div class="grid">
+                                        <div class="grid__item">
+                                            <img src="./img/generateur_1.JPG" class="card__image" alt=" photos projet XY">
+                                            <img src="./img/generateur_2.JPG" class="card__image" alt=" photos projet XY">
+                                        </div>
+                                        <div class="grid__item ">
+                                        
+                                            <h4 class="mondal__title h2" >Générateur de mot de passe</h4>
 
-                       
-                        <div class="card__overlay">
-                            <a href="#" class="card__link" data-id="modal-6"> + </a> changer le numéro ici
-                        </div>
-                    </div>
-                    
-                    <div class="modal" id="modal-6"> changer le numéro ici aussi
-                        <button class="modal__close">&times;</button>
-                       >
-                        <div class="modal__content">
-                            <div class="container">
-                                <div class="grid">
-                                    <div class="grid__item">
-                                        <img src="./img/generateur_1.JPG" class="card__image" alt=" photos projet XY">
-                                        <img src="./img/generateur_2.JPG" class="card__image" alt=" photos projet XY">
-                                    </div>
-                                    <div class="grid__item ">
-                                       
-                                        <h4 class="mondal__title h2" >Générateur de mot de passe</h4>
+                                            <p>
+                                                <svg xmlns="http://www.w3.org/2000/svg" height="15" width="15" viewBox="0 0 448 512"><path opacity="1" fill="#1E3050" d="M152 24c0-13.3-10.7-24-24-24s-24 10.7-24 24V64H64C28.7 64 0 92.7 0 128v16 48V448c0 35.3 28.7 64 64 64H384c35.3 0 64-28.7 64-64V192 144 128c0-35.3-28.7-64-64-64H344V24c0-13.3-10.7-24-24-24s-24 10.7-24 24V64H152V24zM48 192H400V448c0 8.8-7.2 16-16 16H64c-8.8 0-16-7.2-16-16V192z"/></svg>
+                                                <i>Année : 2023</i>
+                                            </p>
 
-                                        <p>
-                                            <svg xmlns="http://www.w3.org/2000/svg" height="15" width="15" viewBox="0 0 448 512"><path opacity="1" fill="#1E3050" d="M152 24c0-13.3-10.7-24-24-24s-24 10.7-24 24V64H64C28.7 64 0 92.7 0 128v16 48V448c0 35.3 28.7 64 64 64H384c35.3 0 64-28.7 64-64V192 144 128c0-35.3-28.7-64-64-64H344V24c0-13.3-10.7-24-24-24s-24 10.7-24 24V64H152V24zM48 192H400V448c0 8.8-7.2 16-16 16H64c-8.8 0-16-7.2-16-16V192z"/></svg>
-                                            <i>Année : 2023</i>
-                                        </p>
+                                            <p class="category" >
+                                                <svg xmlns="http://www.w3.org/2000/svg" height="15" width="15" viewBox="0 0 448 512"><path d="M0 80V229.5c0 17 6.7 33.3 18.7 45.3l176 176c25 25 65.5 25 90.5 0L418.7 317.3c25-25 25-65.5 0-90.5l-176-176c-12-12-28.3-18.7-45.3-18.7H48C21.5 32 0 53.5 0 80zm112 32a32 32 0 1 1 0 64 32 32 0 1 1 0-64z"/></svg>
+                                                Application
+                                            </p>
 
-                                        <p class="category" >
-                                            <svg xmlns="http://www.w3.org/2000/svg" height="15" width="15" viewBox="0 0 448 512"><path d="M0 80V229.5c0 17 6.7 33.3 18.7 45.3l176 176c25 25 65.5 25 90.5 0L418.7 317.3c25-25 25-65.5 0-90.5l-176-176c-12-12-28.3-18.7-45.3-18.7H48C21.5 32 0 53.5 0 80zm112 32a32 32 0 1 1 0 64 32 32 0 1 1 0-64z"/></svg>
-                                            Application
-                                        </p>
+                                            <p>
+                                                Là j'ai tous simplement suivit un tuto sur YouTube. Car j'avais du mal à trouver des mots de passe pour mes différetens comptes.
+                                            </p>
 
-                                        <p>
-                                            Là j'ai tous simplement suivit un tuto sur YouTube. Car j'avais du mal à trouver des mots de passe pour mes différetens comptes.
-                                        </p>
+                                            <h5 class="h3">Informations</h5>
 
-                                        <h5 class="h3">Informations</h5>
+                                            <p>
+                                                J'ai ensuite adapter à mes besoins et rajouter un bouton pour les majuscules. Pour pouvoir choisir si je les veux ou pas dans le mot de passe.
+                                            </p>
 
-                                        <p>
-                                            J'ai ensuite adapter à mes besoins et rajouter un bouton pour les majuscules. Pour pouvoir choisir si je les veux ou pas dans le mot de passe.
-                                        </p>
+                                            <h5 class="h3">Technologies</h5>
 
-                                        <h5 class="h3">Technologies</h5>
+                                            <ul>
+                                                <li>HTML</li>
+                                                <li>CSS</li>
+                                                <li>Javascript</li>
+                                            </ul>
 
-                                        <ul>
-                                            <li>HTML</li>
-                                            <li>CSS</li>
-                                            <li>Javascript</li>
-                                        </ul>
-
+                                        </div>
                                     </div>
                                 </div>
                             </div>
                         </div>
-                    </div>
-                </div>   -->
+                    </div>   -->
 
+                </div>
             </div>
-        </div>
-    </section>
-</main>
+        </section>
+    </main>
 
-<script src="./script.js"></script>
+    <script src="./script.js"></script>
 </body>
 </html>
