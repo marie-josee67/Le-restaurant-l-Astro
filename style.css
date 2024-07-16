@@ -1,11 +1,15 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
 /*  la charte graphique pas encore les bonnes couleurs*/
  :root{
     --white-1: black;
     --white-2:#858484;
     --white-bg-nav: rgba(240, 248, 255, 0.495);
     --white-bg-1:#0082b7;
-    --white-bg-2:linear-gradient(to left top, #1f368b, #005ead, #0082b7, #00a1ad, #00be9a, #4cbe71, #7eba43, #aeb100, #d28c04, #e26335, #dc3f5d, #bc3381);
-    --white-bg-3: rgb(72, 155, 17);/* couleur de fond  */
     --white-color-2:#aeb100;
     --white-color-1:#e26335;
     --white-color-3:#333;
@@ -15,15 +19,6 @@
     --white-border-boutton: #bc3381;
     --white-border:white;
 } 
-
-
-*{
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-}
-
-
 
 .header{
     background: grey;
@@ -73,7 +68,6 @@ a{
 p{
     padding: 0 0 1rem 0;
 }
-
 
 ul{
     padding-left: 2rem;
@@ -135,10 +129,28 @@ li{
 
 /* ************************************* pour le menu ******************************************** */
 
-/*.portfolio{
-    background: var(--white-bg-1);
-}*/
+/* ******************** tableau ****************** */
+table,th {
+    font-size: 30px;
+    border: 2px solid rgb(21, 172, 67);
+    padding:5px;
+}
 
+table,td {
+    font-size: 25px;
+    text-align: center;
+    border: 2px solid rgb(136, 16, 16);
+    padding:5px;
+}
+
+thead,tfoot {
+    font-size: 15px;
+    background-color: rgb(9, 17, 137);
+    color: #fff;
+    padding:5px;
+}
+
+/* *********** Grille ***************** */
 .menu .grid__item{
     /*max-width: 33.3333%;*/
     max-width: 50%;
@@ -160,9 +172,6 @@ li{
     padding: 0;
     overflow: hidden;
     transition: all 0.4s ease; /* ne marche pas ici */
-
-    /*border: solid 2px rgb(173, 20, 184);*/
-    /*border: solid 2px red;*/
 }
 
 /* class rajouter pour palier le bug */
@@ -270,6 +279,7 @@ li{
     height: 100%; /* toute la zone clickable */
     /*border:solid 2px blue;*/
 }
+
 /* fait réapparaître le +  en JS*/
 .card:hover .card__overlay{
     /*display: block;*/ 
