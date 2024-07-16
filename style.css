@@ -56,7 +56,7 @@
     border: 2px solid blue;
 }
 
-/*.nav a {
+.nav a {
     display: flex;
     width: 100%;
     text-align: center;
@@ -66,7 +66,7 @@
 
 
 
-/* pour le menu  */
+/* ************************************* pour le menu ******************************************** */
 
 /*.portfolio{
     background: var(--white-bg-1);
