@@ -20,43 +20,24 @@
     --white-border:white;
 } 
 
-.header{
-    background: grey;
-
-    /* *padding option 1 */
-    padding: 20px;
-
-    /* * padding option 2 */
-    /*padding: 20px 10px 5px 0;*/
-
-    /* * padding option 3*/
-    /* padding: 20px 10px 5px */
-    /* 1° chiffre le haut, 2° chiffre gauche et droite, 3° chiffre le bas */
-
-    /* * padding option 4*/
-    /* padding: 20px 10px  */
-    /* 1° chiffre le haut et bas et  2° chiffre gauche et droite */
-
-}
-
-.main{
-    background: lightgrey;
-}
-
-.footer{
-    background: gray;
+body{
+    background: var(--white-2);
 }
 
 .nav{
+    display: flex;
+    justify-content:space-between;
+    font-size: 20px;
+    background: rgba(137, 197, 26, 0.726);
+    padding: 10px 20px;
     width: 100%;
-    text-align: center;
     /*border: 2px solid blue;*/
 }
 
 .nav a {
     display: flex;
+    justify-content:space-between;
     width: 100%;
-    text-align: center;
     text-decoration: none;
     /*border: 2px solid red;*/
 }
@@ -67,21 +48,6 @@ a{
 
 p{
     padding: 0 0 1rem 0;
-}
-
-ul{
-    padding-left: 2rem;
-}
-
-li{
-    margin-bottom: 1rem;
-}
-
-/*  class utilitaire qui retire les puces des listes */
-.list-unstyled{
-    list-style: none;
-    margin: 0;
-    padding: 0;
 }
 
 /* correspond à la card positionner comme class utilitaire */
